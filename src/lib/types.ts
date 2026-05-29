@@ -1,7 +1,7 @@
 export interface Tour {
   id: number;
   title: string;
-  duration: number; // days
+  duration: number;
   price: number;
   region: string;
   rating: number;
@@ -13,8 +13,8 @@ export interface Tour {
 export interface Destination {
   id: number;
   name: string;
-  toursCount: number;
-  highlights: string[];
+  tourCount: number;
+  countries: string[];
   image: string;
   description: string;
 }

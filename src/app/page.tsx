@@ -1,65 +1,153 @@
-import Image from "next/image";
+import HeroSection from '@/components/HeroSection';
+import StatsBar from '@/components/StatsBar';
+import TourCard from '@/components/TourCard';
+import DestinationCard from '@/components/DestinationCard';
+import TestimonialCard from '@/components/TestimonialCard';
+import NewsletterSection from '@/components/NewsletterSection';
+import { tours, destinations, testimonials } from '@/lib/data';
+import Link from 'next/link';
 
-export default function Home() {
+const whyChooseUs = [
+  {
+    icon: '🧭',
+    title: 'Expert Guides',
+    desc: 'Our certified local guides bring destinations to life with insider knowledge and genuine passion.'
+  },
+  {
+    icon: '💰',
+    title: 'Best Prices',
+    desc: 'We guarantee the best value for every tour. Find it cheaper elsewhere and we\'ll match it.'
+  },
+  {
+    icon: '🛡️',
+    title: 'Safe Travel',
+    desc: 'Your safety is our top priority. All tours include comprehensive travel insurance coverage.'
+  },
+  {
+    icon: '📞',
+    title: '24/7 Support',
+    desc: 'Round-the-clock assistance before, during, and after your trip — wherever you are.'
+  }
+];
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      <HeroSection />
+      <StatsBar />
+
+      {/* Popular Destinations */}
+      <section className="py-20" style={{ backgroundColor: '#F8F9FA' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span style={{ color: '#FF6B35' }} className="text-sm font-semibold uppercase tracking-widest">
+              Explore the Globe
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+              Popular Destinations
+            </h2>
+            <p className="text-gray-600 mt-3 max-w-xl mx-auto">
+              From African savannas to Asian temples — find your perfect destination
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {destinations.map((dest) => (
+              <DestinationCard key={dest.id} destination={dest} />
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/destinations"
+              style={{ border: '2px solid #FF6B35', color: '#FF6B35' }}
+              className="inline-block px-8 py-3 rounded-full font-semibold hover:bg-orange-50 transition-colors"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              View All Destinations
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Tours */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span style={{ color: '#FF6B35' }} className="text-sm font-semibold uppercase tracking-widest">
+              Handpicked For You
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+              Featured Tours
+            </h2>
+            <p className="text-gray-600 mt-3 max-w-xl mx-auto">
+              Our most popular tours, loved by thousands of travelers worldwide
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {tours.slice(0, 6).map((tour) => (
+              <TourCard key={tour.id} tour={tour} />
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/tours"
+              style={{ backgroundColor: '#FF6B35' }}
+              className="inline-block text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              View All Tours
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20" style={{ backgroundColor: '#1A1A2E' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span style={{ color: '#FF6B35' }} className="text-sm font-semibold uppercase tracking-widest">
+              Why Travel With Us
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
+              The Umbrella Difference
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {whyChooseUs.map((item) => (
+              <div
+                key={item.title}
+                className="text-center p-7 rounded-2xl group hover:scale-105 transition-transform duration-300"
+                style={{ backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
+              >
+                <div className="text-5xl mb-4">{item.icon}</div>
+                <h3 className="text-white font-bold text-lg mb-3">{item.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20" style={{ backgroundColor: '#F8F9FA' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span style={{ color: '#FF6B35' }} className="text-sm font-semibold uppercase tracking-widest">
+              Traveler Stories
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+              What Our Guests Say
+            </h2>
+            <p className="text-gray-600 mt-3 max-w-xl mx-auto">
+              Don&apos;t just take our word for it — hear from our happy travelers
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {testimonials.map((t) => (
+              <TestimonialCard key={t.id} testimonial={t} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <NewsletterSection />
+    </>
   );
 }
