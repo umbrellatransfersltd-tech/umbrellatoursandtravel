@@ -43,58 +43,73 @@
     </div>
   </div>
 
-  <!-- ========== Regions Section ========== -->
+  <!-- ========== Destinations Filter + Grid ========== -->
   <section>
     <div class="container">
-      <h2 class="section-title">Destinations by Region</h2>
+      <h2 class="section-title">Popular Destinations</h2>
       <p class="section-subtitle">Explore Britain's most captivating regions from London</p>
-      <div class="regions-grid">
-        <div class="region-card fade-in">
-          <img src="https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=600&q=80" alt="South East England" loading="lazy">
-          <div class="region-card-body">
-            <h3 class="region-name">South East England</h3>
-            <p class="region-countries">Dover · Canterbury · Brighton · Windsor</p>
-            <a href="tours.html?destination=south-east" class="region-count">45 Tours Available</a>
+      <div style="display:flex; justify-content:center; margin-bottom:2.5rem;">
+        <select id="dest-filter" onchange="filterDestinations(this.value)" style="padding:12px 24px; border-radius:30px; border:2px solid var(--primary); font-family:inherit; font-size:1rem; font-weight:600; color:var(--secondary); background:#fff; cursor:pointer; outline:none;">
+          <option value="All">All</option>
+          <option value="London">London</option>
+          <option value="South East England">South East England</option>
+          <option value="South West England">South West England</option>
+          <option value="East England">East England</option>
+        </select>
+      </div>
+      <div class="destinations-grid" id="dest-grid">
+        <div class="dest-card fade-in" data-region="London">
+          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80" alt="London" loading="lazy">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">35 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">London</span>
+            <span class="dest-country">Sightseeing tours of the capital</span>
           </div>
         </div>
-        <div class="region-card fade-in">
-          <img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=600&q=80" alt="South West England" loading="lazy">
-          <div class="region-card-body">
-            <h3 class="region-name">South West England</h3>
-            <p class="region-countries">Bath · Stonehenge · Cotswolds · Oxford</p>
-            <a href="tours.html?destination=south-west" class="region-count">38 Tours Available</a>
+        <div class="dest-card fade-in" data-region="South East England">
+          <img src="https://images.unsplash.com/photo-1580112184751-a2f0f3c79034?w=600&q=80" alt="Oxford & Bicester" loading="lazy">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">18 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Oxford &amp; Bicester</span>
+            <span class="dest-country">University city + luxury shopping</span>
           </div>
         </div>
-        <div class="region-card fade-in">
-          <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80" alt="East England" loading="lazy">
-          <div class="region-card-body">
-            <h3 class="region-name">East England</h3>
-            <p class="region-countries">Cambridge · Ely · Norfolk</p>
-            <a href="tours.html?destination=east-england" class="region-count">22 Tours Available</a>
+        <div class="dest-card fade-in" data-region="South East England">
+          <img src="https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=600&q=80" alt="Dover & Canterbury" loading="lazy">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">22 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Dover &amp; Canterbury</span>
+            <span class="dest-country">White Cliffs + Cathedral + Leeds Castle</span>
           </div>
         </div>
-        <div class="region-card fade-in">
-          <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=600&q=80" alt="Central England" loading="lazy">
-          <div class="region-card-body">
-            <h3 class="region-name">Central England</h3>
-            <p class="region-countries">Stratford · Birmingham · Peak District</p>
-            <a href="tours.html?destination=central" class="region-count">29 Tours Available</a>
+        <div class="dest-card fade-in" data-region="South West England">
+          <img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=600&q=80" alt="Stonehenge & Bath" loading="lazy">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">20 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Stonehenge &amp; Bath</span>
+            <span class="dest-country">Ancient stones + Roman spa city</span>
           </div>
         </div>
-        <div class="region-card fade-in">
-          <img src="https://images.unsplash.com/photo-1509587584298-0f3b3a3a1797?w=600&q=80" alt="North England" loading="lazy">
-          <div class="region-card-body">
-            <h3 class="region-name">North England</h3>
-            <p class="region-countries">Lake District · Yorkshire · Harrogate</p>
-            <a href="tours.html?destination=north" class="region-count">18 Tours Available</a>
+        <div class="dest-card fade-in" data-region="East England">
+          <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80" alt="Cambridge" loading="lazy">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">15 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Cambridge</span>
+            <span class="dest-country">University city + punting on the River Cam</span>
           </div>
         </div>
-        <div class="region-card fade-in">
-          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80" alt="London Highlights" loading="lazy">
-          <div class="region-card-body">
-            <h3 class="region-name">London Highlights</h3>
-            <p class="region-countries">Tower of London · Greenwich · Hampton Court</p>
-            <a href="tours.html" class="region-count">35 Tours Available</a>
+        <div class="dest-card fade-in" data-region="South East England">
+          <img src="https://images.unsplash.com/photo-1570304816841-906a17d4d6b3?w=600&q=80" alt="Brighton & Coast" loading="lazy">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">16 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Brighton &amp; Coast</span>
+            <span class="dest-country">Seaside, Royal Pavilion, Palace Pier</span>
           </div>
         </div>
       </div>
@@ -199,6 +214,12 @@
 
   <script src="js/main.js"></script>
   <script>
+    function filterDestinations(region) {
+      const cards = document.querySelectorAll('#dest-grid .dest-card');
+      cards.forEach(card => {
+        card.style.display = (region === 'All' || card.dataset.region === region) ? '' : 'none';
+      });
+    }
     function handleNewsletter(e) {
       e.preventDefault();
       const form = e.target;
