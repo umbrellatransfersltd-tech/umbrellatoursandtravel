@@ -10,7 +10,7 @@ const toursData = [
     rating: 4.9,
     stars: '★★★★★',
     ratingText: '4.9 (314 reviews)',
-    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80',
     alt: 'London iconic landmarks'
   },
   {
@@ -23,7 +23,7 @@ const toursData = [
     rating: 4.9,
     stars: '★★★★★',
     ratingText: '4.9 (214 reviews)',
-    image: 'https://images.unsplash.com/photo-1590080876126-7ece9e2b1cf0?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1626087422533-a7dd3fe58d1e?w=600&q=80',
     alt: 'Warner Bros Studio Harry Potter sets'
   },
   {
@@ -49,7 +49,7 @@ const toursData = [
     rating: 4.8,
     stars: '★★★★★',
     ratingText: '4.8 (176 reviews)',
-    image: 'https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=600&q=80',
     alt: 'Cambridge River Cam and colleges'
   },
   {
@@ -75,7 +75,7 @@ const toursData = [
     rating: 4.7,
     stars: '★★★★★',
     ratingText: '4.7 (142 reviews)',
-    image: 'https://images.unsplash.com/photo-1570304816841-906a17d4d6b3?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
     alt: 'Brighton seafront and Palace Pier'
   },
   {
@@ -114,7 +114,7 @@ const toursData = [
     rating: 4.8,
     stars: '★★★★★',
     ratingText: '4.8 (112 reviews)',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=600&q=80',
     alt: 'Dover cruise port and cliffs'
   }
 ];
