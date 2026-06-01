@@ -29,7 +29,7 @@ const toursData = [
   {
     id: 3,
     title: 'London to Oxford + Bicester Village',
-    region: 'South West England',
+    region: 'South East England',
     duration: 'Full Day',
     durationDays: 1,
     price: 165,
