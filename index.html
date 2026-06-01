@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Umbrella Tours & Travel - Discover the world with unforgettable journeys to breathtaking destinations.">
-  <title>Umbrella Tours & Travel - Discover the World</title>
+  <meta name="description" content="Umbrella Tours & Travel - London's Premier Chauffeur Tour Experience. Premium chauffeur-driven day trips from London to Britain's most iconic destinations.">
+  <title>Umbrella Tours & Travel - London's Premier Chauffeur Tour Experience</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,13 +35,13 @@
   </nav>
 
   <!-- ========== Hero Section ========== -->
-  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1920&q=80');">
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1920&q=80');">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Discover the World with Umbrella Tours</h1>
-      <p>Unforgettable journeys to the world's most breathtaking destinations</p>
+      <h1>London's Premier Chauffeur Tour Service</h1>
+      <p>Private, comfortable day trips across England — picked up from your hotel door</p>
       <div class="search-bar">
-        <input type="text" placeholder="Where do you want to go?">
+        <input type="text" placeholder="Where would you like to go?" id="hero-destination">
         <div class="divider"></div>
         <input type="date" aria-label="Departure date">
         <div class="divider"></div>
@@ -51,9 +51,12 @@
           <option value="2">2 Travelers</option>
           <option value="3">3 Travelers</option>
           <option value="4">4 Travelers</option>
-          <option value="5">5+ Travelers</option>
+          <option value="5">5 Travelers</option>
+          <option value="6">6 Travelers</option>
+          <option value="7">7 Travelers</option>
+          <option value="8">8 Travelers</option>
         </select>
-        <button class="btn-search">🔍 Search</button>
+        <button class="btn-search" onclick="window.location.href='tours.html'">🔍 Search</button>
       </div>
     </div>
   </section>
@@ -63,23 +66,23 @@
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item fade-in">
-          <div class="stat-icon">✈️</div>
-          <span class="stat-number">500+</span>
+          <div class="stat-icon">🚗</div>
+          <span class="stat-number">200+</span>
           <span class="stat-label">Tours Available</span>
         </div>
         <div class="stat-item fade-in">
-          <div class="stat-icon">🌍</div>
+          <div class="stat-icon">🏰</div>
           <span class="stat-number">50+</span>
-          <span class="stat-label">Destinations</span>
+          <span class="stat-label">UK Destinations</span>
         </div>
         <div class="stat-item fade-in">
           <div class="stat-icon">😊</div>
-          <span class="stat-number">10,000+</span>
+          <span class="stat-number">8,000+</span>
           <span class="stat-label">Happy Travelers</span>
         </div>
         <div class="stat-item fade-in">
           <div class="stat-icon">⭐</div>
-          <span class="stat-number">15</span>
+          <span class="stat-number">10</span>
           <span class="stat-label">Years Experience</span>
         </div>
       </div>
@@ -90,60 +93,60 @@
   <section id="destinations">
     <div class="container">
       <h2 class="section-title">Popular Destinations</h2>
-      <p class="section-subtitle">Explore the world's most captivating places</p>
+      <p class="section-subtitle">Explore Britain's most captivating regions from London</p>
       <div class="destinations-grid">
         <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" alt="Kenya">
+          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80" alt="London">
           <div class="dest-overlay"></div>
-          <span class="dest-badge">45 Tours</span>
+          <span class="dest-badge">35 Tours</span>
           <div class="dest-info">
-            <span class="dest-name">Kenya</span>
-            <span class="dest-country">Africa</span>
+            <span class="dest-name">London</span>
+            <span class="dest-country">Sightseeing tours of the capital</span>
           </div>
         </div>
         <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80" alt="Japan">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">52 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">Japan</span>
-            <span class="dest-country">Asia</span>
-          </div>
-        </div>
-        <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=600&q=80" alt="Greece">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">38 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">Greece</span>
-            <span class="dest-country">Europe</span>
-          </div>
-        </div>
-        <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&q=80" alt="Peru">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">29 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">Peru</span>
-            <span class="dest-country">South America</span>
-          </div>
-        </div>
-        <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">32 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">Bali</span>
-            <span class="dest-country">Asia</span>
-          </div>
-        </div>
-        <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=600&q=80" alt="Iceland">
+          <img src="https://images.unsplash.com/photo-1580112184751-a2f0f3c79034?w=600&q=80" alt="Oxford & Bicester">
           <div class="dest-overlay"></div>
           <span class="dest-badge">18 Tours</span>
           <div class="dest-info">
-            <span class="dest-name">Iceland</span>
-            <span class="dest-country">Europe</span>
+            <span class="dest-name">Oxford &amp; Bicester</span>
+            <span class="dest-country">University city + luxury shopping</span>
+          </div>
+        </div>
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=600&q=80" alt="Dover & Canterbury">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">22 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Dover &amp; Canterbury</span>
+            <span class="dest-country">White Cliffs + Cathedral + Leeds Castle</span>
+          </div>
+        </div>
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=600&q=80" alt="Stonehenge & Bath">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">20 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Stonehenge &amp; Bath</span>
+            <span class="dest-country">Ancient stones + Roman spa city</span>
+          </div>
+        </div>
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80" alt="Cambridge">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">15 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Cambridge</span>
+            <span class="dest-country">University city + punting on the River Cam</span>
+          </div>
+        </div>
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1570304816841-906a17d4d6b3?w=600&q=80" alt="Brighton & Coast">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">16 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Brighton &amp; Coast</span>
+            <span class="dest-country">Seaside, Royal Pavilion, Palace Pier</span>
           </div>
         </div>
       </div>
@@ -154,112 +157,112 @@
   <section style="background: var(--light-gray);">
     <div class="container">
       <h2 class="section-title">Featured Tours</h2>
-      <p class="section-subtitle">Our most popular handpicked travel experiences</p>
+      <p class="section-subtitle">Our most popular chauffeur-driven UK experiences</p>
       <div class="tours-grid">
         <div class="tour-card fade-in">
           <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" alt="Kenya Safari" loading="lazy">
-            <span class="tour-region-badge">Africa</span>
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80" alt="London Sightseeing" loading="lazy">
+            <span class="tour-region-badge">London</span>
           </div>
           <div class="tour-card-body">
-            <h3 class="tour-title">Safari Adventure in Kenya</h3>
+            <h3 class="tour-title">London Sightseeing</h3>
             <div class="tour-meta">
-              <span class="tour-duration">⏱ 7 Days</span>
-              <span class="tour-price">$1,299 <span>/ person</span></span>
+              <span class="tour-duration">⏱ Full Day</span>
+              <span class="tour-price">From £95 <span>/ person</span></span>
             </div>
             <div class="tour-rating">
               <span class="stars">★★★★★</span>
-              <span>4.8 (124 reviews)</span>
+              <span>4.9 (314 reviews)</span>
             </div>
             <a href="contact.html" class="btn-book-tour">Book Now</a>
           </div>
         </div>
         <div class="tour-card fade-in">
           <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&q=80" alt="Machu Picchu" loading="lazy">
-            <span class="tour-region-badge">South America</span>
+            <img src="https://images.unsplash.com/photo-1590080876126-7ece9e2b1cf0?w=600&q=80" alt="Warner Bros Studio Harry Potter" loading="lazy">
+            <span class="tour-region-badge">South East England</span>
           </div>
           <div class="tour-card-body">
-            <h3 class="tour-title">Machu Picchu Explorer</h3>
+            <h3 class="tour-title">London to Warner Bros. Studio (Harry Potter)</h3>
             <div class="tour-meta">
-              <span class="tour-duration">⏱ 10 Days</span>
-              <span class="tour-price">$1,899 <span>/ person</span></span>
+              <span class="tour-duration">⏱ Full Day</span>
+              <span class="tour-price">From £175 <span>/ person</span></span>
             </div>
             <div class="tour-rating">
               <span class="stars">★★★★★</span>
-              <span>4.9 (98 reviews)</span>
+              <span>4.9 (214 reviews)</span>
             </div>
             <a href="contact.html" class="btn-book-tour">Book Now</a>
           </div>
         </div>
         <div class="tour-card fade-in">
           <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=600&q=80" alt="Northern Lights Iceland" loading="lazy">
-            <span class="tour-region-badge">Europe</span>
+            <img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=600&q=80" alt="Stonehenge and Bath" loading="lazy">
+            <span class="tour-region-badge">South West England</span>
           </div>
           <div class="tour-card-body">
-            <h3 class="tour-title">Northern Lights Iceland</h3>
+            <h3 class="tour-title">London to Stonehenge + Bath</h3>
             <div class="tour-meta">
-              <span class="tour-duration">⏱ 5 Days</span>
-              <span class="tour-price">$2,199 <span>/ person</span></span>
+              <span class="tour-duration">⏱ Full Day</span>
+              <span class="tour-price">From £185 <span>/ person</span></span>
             </div>
             <div class="tour-rating">
               <span class="stars">★★★★★</span>
-              <span>4.7 (76 reviews)</span>
+              <span>4.9 (231 reviews)</span>
             </div>
             <a href="contact.html" class="btn-book-tour">Book Now</a>
           </div>
         </div>
         <div class="tour-card fade-in">
           <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali" loading="lazy">
-            <span class="tour-region-badge">Asia</span>
+            <img src="https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=600&q=80" alt="Leeds Castle Dover Canterbury" loading="lazy">
+            <span class="tour-region-badge">South East England</span>
           </div>
           <div class="tour-card-body">
-            <h3 class="tour-title">Bali Cultural Journey</h3>
+            <h3 class="tour-title">London to Leeds Castle + Dover Cliffs + Canterbury</h3>
             <div class="tour-meta">
-              <span class="tour-duration">⏱ 8 Days</span>
-              <span class="tour-price">$999 <span>/ person</span></span>
+              <span class="tour-duration">⏱ Full Day</span>
+              <span class="tour-price">From £175 <span>/ person</span></span>
             </div>
             <div class="tour-rating">
               <span class="stars">★★★★★</span>
-              <span>4.8 (152 reviews)</span>
+              <span>4.8 (187 reviews)</span>
             </div>
             <a href="contact.html" class="btn-book-tour">Book Now</a>
           </div>
         </div>
         <div class="tour-card fade-in">
           <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?w=600&q=80" alt="Egyptian Pyramids" loading="lazy">
-            <span class="tour-region-badge">Africa</span>
+            <img src="https://images.unsplash.com/photo-1580112184751-a2f0f3c79034?w=600&q=80" alt="Oxford and Bicester Village" loading="lazy">
+            <span class="tour-region-badge">South West England</span>
           </div>
           <div class="tour-card-body">
-            <h3 class="tour-title">Egyptian Pyramids Tour</h3>
+            <h3 class="tour-title">London to Oxford + Bicester Village</h3>
             <div class="tour-meta">
-              <span class="tour-duration">⏱ 6 Days</span>
-              <span class="tour-price">$1,499 <span>/ person</span></span>
+              <span class="tour-duration">⏱ Full Day</span>
+              <span class="tour-price">From £165 <span>/ person</span></span>
             </div>
             <div class="tour-rating">
-              <span class="stars">★★★★☆</span>
-              <span>4.6 (89 reviews)</span>
+              <span class="stars">★★★★★</span>
+              <span>4.8 (189 reviews)</span>
             </div>
             <a href="contact.html" class="btn-book-tour">Book Now</a>
           </div>
         </div>
         <div class="tour-card fade-in">
           <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&q=80" alt="Santorini" loading="lazy">
-            <span class="tour-region-badge">Europe</span>
+            <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80" alt="Cambridge River Cam" loading="lazy">
+            <span class="tour-region-badge">East England</span>
           </div>
           <div class="tour-card-body">
-            <h3 class="tour-title">Santorini Escape</h3>
+            <h3 class="tour-title">London to Cambridge</h3>
             <div class="tour-meta">
-              <span class="tour-duration">⏱ 7 Days</span>
-              <span class="tour-price">$1,799 <span>/ person</span></span>
+              <span class="tour-duration">⏱ Full Day</span>
+              <span class="tour-price">From £155 <span>/ person</span></span>
             </div>
             <div class="tour-rating">
               <span class="stars">★★★★★</span>
-              <span>4.9 (201 reviews)</span>
+              <span>4.8 (176 reviews)</span>
             </div>
             <a href="contact.html" class="btn-book-tour">Book Now</a>
           </div>
@@ -275,27 +278,27 @@
   <section class="why-us">
     <div class="container">
       <h2 class="section-title">Why Choose Us</h2>
-      <p class="section-subtitle">We make every journey extraordinary</p>
+      <p class="section-subtitle">London's premier chauffeur tour experience</p>
       <div class="features-grid">
         <div class="feature-box fade-in">
-          <span class="feature-icon">🧭</span>
-          <h3>Expert Guides</h3>
-          <p>Professional guides with local expertise and passion for travel</p>
+          <span class="feature-icon">🚗</span>
+          <h3>Luxury Vehicles</h3>
+          <p>Travel in comfort in our premium Mercedes and BMW fleet</p>
         </div>
         <div class="feature-box fade-in">
-          <span class="feature-icon">💰</span>
-          <h3>Best Prices</h3>
-          <p>Competitive pricing with no hidden fees — what you see is what you pay</p>
+          <span class="feature-icon">👨‍✈️</span>
+          <h3>Professional Drivers</h3>
+          <p>Licensed, knowledgeable chauffeurs who love sharing stories</p>
         </div>
         <div class="feature-box fade-in">
-          <span class="feature-icon">🛡️</span>
-          <h3>Safe Travel</h3>
-          <p>Your safety is our top priority at every step of your journey</p>
+          <span class="feature-icon">📍</span>
+          <h3>Door-to-Door</h3>
+          <p>Picked up from your London hotel or address</p>
         </div>
         <div class="feature-box fade-in">
-          <span class="feature-icon">📞</span>
-          <h3>24/7 Support</h3>
-          <p>Always here when you need us — day or night, wherever you are</p>
+          <span class="feature-icon">🎫</span>
+          <h3>All Inclusive</h3>
+          <p>Entrance fees, parking and fuel all included in the price</p>
         </div>
       </div>
     </div>
@@ -309,36 +312,36 @@
       <div class="testimonials-grid">
         <div class="testimonial-card fade-in">
           <div class="testimonial-header">
-            <div class="avatar avatar-blue">SM</div>
+            <div class="avatar avatar-blue">ER</div>
             <div>
-              <div class="testimonial-name">Sarah M.</div>
-              <div class="testimonial-dest">Kenya Safari</div>
+              <div class="testimonial-name">Emma R.</div>
+              <div class="testimonial-dest">Harry Potter Tour</div>
             </div>
           </div>
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"The Kenya safari was absolutely life-changing! Every detail was perfectly planned, and our guide was incredibly knowledgeable. I'll cherish these memories forever."</p>
+          <p class="testimonial-text">"The Harry Potter tour was incredible! Our driver knew all the hidden filming spots. A truly magical day out from London."</p>
         </div>
         <div class="testimonial-card fade-in">
           <div class="testimonial-header">
-            <div class="avatar avatar-green">JT</div>
+            <div class="avatar avatar-green">MB</div>
             <div>
-              <div class="testimonial-name">James T.</div>
-              <div class="testimonial-dest">Peru Tour</div>
+              <div class="testimonial-name">Michael B.</div>
+              <div class="testimonial-dest">Stonehenge &amp; Bath</div>
             </div>
           </div>
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Machu Picchu tour exceeded all expectations! The organization was flawless, and the experience was beyond anything I could have imagined. Highly recommend!"</p>
+          <p class="testimonial-text">"Stonehenge and Bath in one day — perfectly organized. Will book again! The chauffeur was knowledgeable and made the day extra special."</p>
         </div>
         <div class="testimonial-card fade-in">
           <div class="testimonial-header">
-            <div class="avatar avatar-purple">PK</div>
+            <div class="avatar avatar-purple">YT</div>
             <div>
-              <div class="testimonial-name">Priya K.</div>
-              <div class="testimonial-dest">Bali Journey</div>
+              <div class="testimonial-name">Yuki T.</div>
+              <div class="testimonial-dest">Cotswolds Tour</div>
             </div>
           </div>
-          <div class="testimonial-stars">★★★★☆</div>
-          <p class="testimonial-text">"Bali was magical. The perfect organization and attention to detail made the entire trip stress-free. Already planning my next adventure with Umbrella!"</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"As first-time visitors to the UK, the Cotswolds tour was magical. Highly recommend! Picked up right from our hotel — couldn't have been easier."</p>
         </div>
       </div>
     </div>
@@ -348,8 +351,8 @@
   <section class="newsletter">
     <div class="container">
       <div class="newsletter-inner">
-        <h2>Get Exclusive Travel Deals</h2>
-        <p>Subscribe to our newsletter and be the first to know about special offers and new destinations.</p>
+        <h2>Get Exclusive Tour Deals</h2>
+        <p>Subscribe to our newsletter and be the first to know about special offers and new UK tour packages.</p>
         <form class="newsletter-form" onsubmit="handleNewsletter(event)">
           <input type="email" placeholder="Enter your email address" required>
           <button type="submit">Subscribe</button>
@@ -364,7 +367,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-logo">☂ Umbrella Tours &amp; Travel</div>
-          <p class="footer-tagline">Your trusted partner for unforgettable journeys around the world. We bring your travel dreams to life with expertise and care.</p>
+          <p class="footer-tagline">London's Premier Chauffeur Tour Experience. We take you from your door to Britain's most iconic destinations in style and comfort.</p>
         </div>
         <div class="footer-col">
           <h4>Quick Links</h4>
@@ -378,10 +381,10 @@
         </div>
         <div class="footer-col">
           <h4>Contact Info</h4>
-          <p>📍 Nairobi, Kenya</p>
-          <p>📞 +254 700 000 000</p>
+          <p>📍 London, United Kingdom</p>
+          <p>📞 +44 20 0000 0000</p>
           <p>✉️ umbrellatransfersltd@gmail.com</p>
-          <p>🕒 Mon–Fri: 8AM – 6PM</p>
+          <p>🕒 Mon–Sun: 7AM – 9PM</p>
         </div>
         <div class="footer-col">
           <h4>Follow Us</h4>

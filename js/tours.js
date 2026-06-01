@@ -2,147 +2,120 @@
 const toursData = [
   {
     id: 1,
-    title: 'Safari Adventure in Kenya',
-    region: 'Africa',
-    duration: 7,
-    price: 1299,
-    rating: 4.8,
+    title: 'London Sightseeing',
+    region: 'London',
+    duration: 'Full Day',
+    durationDays: 1,
+    price: 95,
+    rating: 4.9,
     stars: '★★★★★',
-    ratingText: '4.8 (124 reviews)',
-    image: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80',
-    alt: 'Kenya Safari'
+    ratingText: '4.9 (314 reviews)',
+    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80',
+    alt: 'London iconic landmarks'
   },
   {
     id: 2,
-    title: 'Machu Picchu Explorer',
-    region: 'South America',
-    duration: 10,
-    price: 1899,
+    title: 'London to Warner Bros. Studio (Harry Potter)',
+    region: 'South East England',
+    duration: 'Full Day',
+    durationDays: 1,
+    price: 175,
     rating: 4.9,
     stars: '★★★★★',
-    ratingText: '4.9 (98 reviews)',
-    image: 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&q=80',
-    alt: 'Machu Picchu'
+    ratingText: '4.9 (214 reviews)',
+    image: 'https://images.unsplash.com/photo-1590080876126-7ece9e2b1cf0?w=600&q=80',
+    alt: 'Warner Bros Studio Harry Potter sets'
   },
   {
     id: 3,
-    title: 'Northern Lights Iceland',
-    region: 'Europe',
-    duration: 5,
-    price: 2199,
-    rating: 4.7,
+    title: 'London to Oxford + Bicester Village',
+    region: 'South West England',
+    duration: 'Full Day',
+    durationDays: 1,
+    price: 165,
+    rating: 4.8,
     stars: '★★★★★',
-    ratingText: '4.7 (76 reviews)',
-    image: 'https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=600&q=80',
-    alt: 'Northern Lights Iceland'
+    ratingText: '4.8 (189 reviews)',
+    image: 'https://images.unsplash.com/photo-1580112184751-a2f0f3c79034?w=600&q=80',
+    alt: 'Oxford dreaming spires'
   },
   {
     id: 4,
-    title: 'Bali Cultural Journey',
-    region: 'Asia',
-    duration: 8,
-    price: 999,
+    title: 'London to Cambridge',
+    region: 'East England',
+    duration: 'Full Day',
+    durationDays: 1,
+    price: 155,
     rating: 4.8,
     stars: '★★★★★',
-    ratingText: '4.8 (152 reviews)',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80',
-    alt: 'Bali'
+    ratingText: '4.8 (176 reviews)',
+    image: 'https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80',
+    alt: 'Cambridge River Cam and colleges'
   },
   {
     id: 5,
-    title: 'Egyptian Pyramids Tour',
-    region: 'Africa',
-    duration: 6,
-    price: 1499,
-    rating: 4.6,
-    stars: '★★★★☆',
-    ratingText: '4.6 (89 reviews)',
-    image: 'https://images.unsplash.com/photo-1539768942893-daf53e448371?w=600&q=80',
-    alt: 'Egyptian Pyramids'
+    title: 'London to Leeds Castle + Dover Cliffs + Canterbury',
+    region: 'South East England',
+    duration: 'Full Day',
+    durationDays: 1,
+    price: 175,
+    rating: 4.8,
+    stars: '★★★★★',
+    ratingText: '4.8 (187 reviews)',
+    image: 'https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=600&q=80',
+    alt: 'White Cliffs of Dover'
   },
   {
     id: 6,
-    title: 'Santorini Escape',
-    region: 'Europe',
-    duration: 7,
-    price: 1799,
-    rating: 4.9,
+    title: 'London to Brighton + Hove',
+    region: 'South East England',
+    duration: 'Full Day',
+    durationDays: 1,
+    price: 145,
+    rating: 4.7,
     stars: '★★★★★',
-    ratingText: '4.9 (201 reviews)',
-    image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&q=80',
-    alt: 'Santorini'
+    ratingText: '4.7 (142 reviews)',
+    image: 'https://images.unsplash.com/photo-1570304816841-906a17d4d6b3?w=600&q=80',
+    alt: 'Brighton seafront and Palace Pier'
   },
   {
     id: 7,
-    title: 'Amazon Rainforest Trek',
-    region: 'South America',
-    duration: 9,
-    price: 1599,
-    rating: 4.7,
+    title: 'London to Stonehenge + Bath',
+    region: 'South West England',
+    duration: 'Full Day',
+    durationDays: 1,
+    price: 185,
+    rating: 4.9,
     stars: '★★★★★',
-    ratingText: '4.7 (63 reviews)',
-    image: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80',
-    alt: 'Amazon Rainforest'
+    ratingText: '4.9 (231 reviews)',
+    image: 'https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=600&q=80',
+    alt: 'Stonehenge standing stones'
   },
   {
     id: 8,
-    title: 'Japan Cherry Blossom',
-    region: 'Asia',
-    duration: 12,
-    price: 2499,
-    rating: 4.9,
+    title: 'Southampton Cruise Transfers + Day Trips',
+    region: 'South East England',
+    duration: 'Half Day',
+    durationDays: 1,
+    price: 195,
+    rating: 4.8,
     stars: '★★★★★',
-    ratingText: '4.9 (175 reviews)',
-    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80',
-    alt: 'Japan Cherry Blossom'
+    ratingText: '4.8 (98 reviews)',
+    image: 'https://images.unsplash.com/photo-1520209268518-aec60b8bb5d8?w=600&q=80',
+    alt: 'Southampton cruise port'
   },
   {
     id: 9,
-    title: 'Morocco Desert Safari',
-    region: 'Africa',
-    duration: 8,
-    price: 1199,
+    title: 'Dover Cruise Transfers + Day Trips',
+    region: 'South East England',
+    duration: 'Half Day',
+    durationDays: 1,
+    price: 165,
     rating: 4.8,
     stars: '★★★★★',
     ratingText: '4.8 (112 reviews)',
-    image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80',
-    alt: 'Morocco Desert'
-  },
-  {
-    id: 10,
-    title: 'Patagonia Adventure',
-    region: 'South America',
-    duration: 14,
-    price: 2999,
-    rating: 4.8,
-    stars: '★★★★★',
-    ratingText: '4.8 (58 reviews)',
-    image: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80',
-    alt: 'Patagonia'
-  },
-  {
-    id: 11,
-    title: 'Greek Islands Cruise',
-    region: 'Europe',
-    duration: 10,
-    price: 2299,
-    rating: 4.7,
-    stars: '★★★★★',
-    ratingText: '4.7 (143 reviews)',
-    image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?w=600&q=80',
-    alt: 'Greek Islands'
-  },
-  {
-    id: 12,
-    title: 'Thailand Beach Hopping',
-    region: 'Asia',
-    duration: 7,
-    price: 899,
-    rating: 4.6,
-    stars: '★★★★☆',
-    ratingText: '4.6 (188 reviews)',
-    image: 'https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=600&q=80',
-    alt: 'Thailand Beach'
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+    alt: 'Dover cruise port and cliffs'
   }
 ];
 
@@ -153,7 +126,7 @@ let activeDuration = 'All';
 // ========== Render Tours ==========
 function createTourCard(tour) {
   return `
-    <div class="tour-card fade-in" data-region="${tour.region}" data-duration="${tour.duration}">
+    <div class="tour-card fade-in" data-region="${tour.region}" data-duration="${tour.durationDays}">
       <div class="tour-card-img">
         <img src="${tour.image}" alt="${tour.alt}" loading="lazy">
         <span class="tour-region-badge">${tour.region}</span>
@@ -161,14 +134,14 @@ function createTourCard(tour) {
       <div class="tour-card-body">
         <h3 class="tour-title">${tour.title}</h3>
         <div class="tour-meta">
-          <span class="tour-duration">⏱ ${tour.duration} Days</span>
-          <span class="tour-price">$${tour.price.toLocaleString()} <span>/ person</span></span>
+          <span class="tour-duration">⏱ ${tour.duration}</span>
+          <span class="tour-price">From £${tour.price.toLocaleString()} <span>/ person</span></span>
         </div>
         <div class="tour-rating">
           <span class="stars">${tour.stars}</span>
           <span>${tour.ratingText}</span>
         </div>
-        <button class="btn-book-tour" onclick="alert('Booking for ${tour.title} — contact us at umbrellatransfersltd@gmail.com')">Book Now</button>
+        <a href="contact.html" class="btn-book-tour">Book Now</a>
       </div>
     </div>
   `;
@@ -178,9 +151,8 @@ function filterTours() {
   return toursData.filter(tour => {
     const regionMatch = activeRegion === 'All' || tour.region === activeRegion;
     let durationMatch = true;
-    if (activeDuration === '1-5') durationMatch = tour.duration >= 1 && tour.duration <= 5;
-    else if (activeDuration === '6-10') durationMatch = tour.duration >= 6 && tour.duration <= 10;
-    else if (activeDuration === '11+') durationMatch = tour.duration >= 11;
+    if (activeDuration === 'Half Day') durationMatch = tour.duration === 'Half Day';
+    else if (activeDuration === 'Full Day') durationMatch = tour.duration === 'Full Day';
     return regionMatch && durationMatch;
   });
 }
@@ -253,10 +225,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const dest = params.get('destination');
   if (dest) {
     const regionMap = {
-      kenya: 'Africa', japan: 'Asia', greece: 'Europe',
-      peru: 'South America', bali: 'Asia', iceland: 'Europe',
-      egypt: 'Africa', morocco: 'Africa', thailand: 'Asia',
-      amazon: 'South America', patagonia: 'South America', santorini: 'Europe'
+      'london': 'London',
+      'south-east': 'South East England',
+      'south-west': 'South West England',
+      'east-england': 'East England'
     };
     const key = dest.toLowerCase();
     for (const [k, v] of Object.entries(regionMap)) {
