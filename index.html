@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Umbrella Tours & Travel - Discover the world with unforgettable journeys to breathtaking destinations.">
+  <title>Umbrella Tours & Travel - Discover the World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== Navbar ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-emoji">☂</span>
+        Umbrella Tours &amp; Travel
+      </a>
+      <ul class="nav-links">
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn-book">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Hero Section ========== -->
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1920&q=80');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Discover the World with Umbrella Tours</h1>
+      <p>Unforgettable journeys to the world's most breathtaking destinations</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Where do you want to go?">
+        <div class="divider"></div>
+        <input type="date" aria-label="Departure date">
+        <div class="divider"></div>
+        <select aria-label="Number of travelers">
+          <option value="">Travelers</option>
+          <option value="1">1 Traveler</option>
+          <option value="2">2 Travelers</option>
+          <option value="3">3 Travelers</option>
+          <option value="4">4 Travelers</option>
+          <option value="5">5+ Travelers</option>
+        </select>
+        <button class="btn-search">🔍 Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Stats Bar ========== -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-icon">✈️</div>
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Tours Available</span>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-icon">🌍</div>
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Destinations</span>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-icon">😊</div>
+          <span class="stat-number">10,000+</span>
+          <span class="stat-label">Happy Travelers</span>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-icon">⭐</div>
+          <span class="stat-number">15</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Popular Destinations ========== -->
+  <section id="destinations">
+    <div class="container">
+      <h2 class="section-title">Popular Destinations</h2>
+      <p class="section-subtitle">Explore the world's most captivating places</p>
+      <div class="destinations-grid">
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" alt="Kenya">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">45 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Kenya</span>
+            <span class="dest-country">Africa</span>
+          </div>
+        </div>
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80" alt="Japan">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">52 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Japan</span>
+            <span class="dest-country">Asia</span>
+          </div>
+        </div>
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=600&q=80" alt="Greece">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">38 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Greece</span>
+            <span class="dest-country">Europe</span>
+          </div>
+        </div>
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&q=80" alt="Peru">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">29 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Peru</span>
+            <span class="dest-country">South America</span>
+          </div>
+        </div>
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">32 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Bali</span>
+            <span class="dest-country">Asia</span>
+          </div>
+        </div>
+        <div class="dest-card fade-in">
+          <img src="https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=600&q=80" alt="Iceland">
+          <div class="dest-overlay"></div>
+          <span class="dest-badge">18 Tours</span>
+          <div class="dest-info">
+            <span class="dest-name">Iceland</span>
+            <span class="dest-country">Europe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Featured Tours ========== -->
+  <section style="background: var(--light-gray);">
+    <div class="container">
+      <h2 class="section-title">Featured Tours</h2>
+      <p class="section-subtitle">Our most popular handpicked travel experiences</p>
+      <div class="tours-grid">
+        <div class="tour-card fade-in">
+          <div class="tour-card-img">
+            <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" alt="Kenya Safari" loading="lazy">
+            <span class="tour-region-badge">Africa</span>
+          </div>
+          <div class="tour-card-body">
+            <h3 class="tour-title">Safari Adventure in Kenya</h3>
+            <div class="tour-meta">
+              <span class="tour-duration">⏱ 7 Days</span>
+              <span class="tour-price">$1,299 <span>/ person</span></span>
+            </div>
+            <div class="tour-rating">
+              <span class="stars">★★★★★</span>
+              <span>4.8 (124 reviews)</span>
+            </div>
+            <a href="contact.html" class="btn-book-tour">Book Now</a>
+          </div>
+        </div>
+        <div class="tour-card fade-in">
+          <div class="tour-card-img">
+            <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&q=80" alt="Machu Picchu" loading="lazy">
+            <span class="tour-region-badge">South America</span>
+          </div>
+          <div class="tour-card-body">
+            <h3 class="tour-title">Machu Picchu Explorer</h3>
+            <div class="tour-meta">
+              <span class="tour-duration">⏱ 10 Days</span>
+              <span class="tour-price">$1,899 <span>/ person</span></span>
+            </div>
+            <div class="tour-rating">
+              <span class="stars">★★★★★</span>
+              <span>4.9 (98 reviews)</span>
+            </div>
+            <a href="contact.html" class="btn-book-tour">Book Now</a>
+          </div>
+        </div>
+        <div class="tour-card fade-in">
+          <div class="tour-card-img">
+            <img src="https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=600&q=80" alt="Northern Lights Iceland" loading="lazy">
+            <span class="tour-region-badge">Europe</span>
+          </div>
+          <div class="tour-card-body">
+            <h3 class="tour-title">Northern Lights Iceland</h3>
+            <div class="tour-meta">
+              <span class="tour-duration">⏱ 5 Days</span>
+              <span class="tour-price">$2,199 <span>/ person</span></span>
+            </div>
+            <div class="tour-rating">
+              <span class="stars">★★★★★</span>
+              <span>4.7 (76 reviews)</span>
+            </div>
+            <a href="contact.html" class="btn-book-tour">Book Now</a>
+          </div>
+        </div>
+        <div class="tour-card fade-in">
+          <div class="tour-card-img">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80" alt="Bali" loading="lazy">
+            <span class="tour-region-badge">Asia</span>
+          </div>
+          <div class="tour-card-body">
+            <h3 class="tour-title">Bali Cultural Journey</h3>
+            <div class="tour-meta">
+              <span class="tour-duration">⏱ 8 Days</span>
+              <span class="tour-price">$999 <span>/ person</span></span>
+            </div>
+            <div class="tour-rating">
+              <span class="stars">★★★★★</span>
+              <span>4.8 (152 reviews)</span>
+            </div>
+            <a href="contact.html" class="btn-book-tour">Book Now</a>
+          </div>
+        </div>
+        <div class="tour-card fade-in">
+          <div class="tour-card-img">
+            <img src="https://images.unsplash.com/photo-1539768942893-daf53e448371?w=600&q=80" alt="Egyptian Pyramids" loading="lazy">
+            <span class="tour-region-badge">Africa</span>
+          </div>
+          <div class="tour-card-body">
+            <h3 class="tour-title">Egyptian Pyramids Tour</h3>
+            <div class="tour-meta">
+              <span class="tour-duration">⏱ 6 Days</span>
+              <span class="tour-price">$1,499 <span>/ person</span></span>
+            </div>
+            <div class="tour-rating">
+              <span class="stars">★★★★☆</span>
+              <span>4.6 (89 reviews)</span>
+            </div>
+            <a href="contact.html" class="btn-book-tour">Book Now</a>
+          </div>
+        </div>
+        <div class="tour-card fade-in">
+          <div class="tour-card-img">
+            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&q=80" alt="Santorini" loading="lazy">
+            <span class="tour-region-badge">Europe</span>
+          </div>
+          <div class="tour-card-body">
+            <h3 class="tour-title">Santorini Escape</h3>
+            <div class="tour-meta">
+              <span class="tour-duration">⏱ 7 Days</span>
+              <span class="tour-price">$1,799 <span>/ person</span></span>
+            </div>
+            <div class="tour-rating">
+              <span class="stars">★★★★★</span>
+              <span>4.9 (201 reviews)</span>
+            </div>
+            <a href="contact.html" class="btn-book-tour">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-2" style="margin-top: 2.5rem;">
+        <a href="tours.html" style="display:inline-block; background: var(--primary); color: #fff; padding: 14px 40px; border-radius: 30px; font-weight: 700; font-size: 1rem; transition: background 0.3s;">View All Tours</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Why Choose Us ========== -->
+  <section class="why-us">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <p class="section-subtitle">We make every journey extraordinary</p>
+      <div class="features-grid">
+        <div class="feature-box fade-in">
+          <span class="feature-icon">🧭</span>
+          <h3>Expert Guides</h3>
+          <p>Professional guides with local expertise and passion for travel</p>
+        </div>
+        <div class="feature-box fade-in">
+          <span class="feature-icon">💰</span>
+          <h3>Best Prices</h3>
+          <p>Competitive pricing with no hidden fees — what you see is what you pay</p>
+        </div>
+        <div class="feature-box fade-in">
+          <span class="feature-icon">🛡️</span>
+          <h3>Safe Travel</h3>
+          <p>Your safety is our top priority at every step of your journey</p>
+        </div>
+        <div class="feature-box fade-in">
+          <span class="feature-icon">📞</span>
+          <h3>24/7 Support</h3>
+          <p>Always here when you need us — day or night, wherever you are</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Testimonials ========== -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Travelers Say</h2>
+      <p class="section-subtitle">Real experiences from real adventurers</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-header">
+            <div class="avatar avatar-blue">SM</div>
+            <div>
+              <div class="testimonial-name">Sarah M.</div>
+              <div class="testimonial-dest">Kenya Safari</div>
+            </div>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The Kenya safari was absolutely life-changing! Every detail was perfectly planned, and our guide was incredibly knowledgeable. I'll cherish these memories forever."</p>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-header">
+            <div class="avatar avatar-green">JT</div>
+            <div>
+              <div class="testimonial-name">James T.</div>
+              <div class="testimonial-dest">Peru Tour</div>
+            </div>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Machu Picchu tour exceeded all expectations! The organization was flawless, and the experience was beyond anything I could have imagined. Highly recommend!"</p>
+        </div>
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-header">
+            <div class="avatar avatar-purple">PK</div>
+            <div>
+              <div class="testimonial-name">Priya K.</div>
+              <div class="testimonial-dest">Bali Journey</div>
+            </div>
+          </div>
+          <div class="testimonial-stars">★★★★☆</div>
+          <p class="testimonial-text">"Bali was magical. The perfect organization and attention to detail made the entire trip stress-free. Already planning my next adventure with Umbrella!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Newsletter ========== -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2>Get Exclusive Travel Deals</h2>
+        <p>Subscribe to our newsletter and be the first to know about special offers and new destinations.</p>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">☂ Umbrella Tours &amp; Travel</div>
+          <p class="footer-tagline">Your trusted partner for unforgettable journeys around the world. We bring your travel dreams to life with expertise and care.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>📍 Nairobi, Kenya</p>
+          <p>📞 +254 700 000 000</p>
+          <p>✉️ umbrellatransfersltd@gmail.com</p>
+          <p>🕒 Mon–Fri: 8AM – 6PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Umbrella Tours &amp; Travel. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button');
+      btn.textContent = '✓ Subscribed!';
+      btn.style.background = '#10b981';
+      form.querySelector('input').value = '';
+      setTimeout(() => {
+        btn.textContent = 'Subscribe';
+        btn.style.background = '';
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

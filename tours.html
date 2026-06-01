@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse all tours offered by Umbrella Tours & Travel. Filter by region and duration.">
+  <title>Our Tours - Umbrella Tours & Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== Navbar ========== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-logo" style="color: var(--text-dark);">
+        <span class="logo-emoji">☂</span>
+        Umbrella Tours &amp; Travel
+      </a>
+      <ul class="nav-links">
+        <li><a href="tours.html" style="color: var(--primary);">Tours</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn-book">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Page Hero ========== -->
+  <div class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Our Tours</h1>
+      <p>Find your perfect adventure from our curated collection</p>
+    </div>
+  </div>
+
+  <!-- ========== Filter Bar ========== -->
+  <div class="filter-section">
+    <div class="container">
+      <div class="filter-row">
+        <span class="filter-label">Region:</span>
+        <button class="filter-btn active" data-filter-region="All">All</button>
+        <button class="filter-btn" data-filter-region="Africa">Africa</button>
+        <button class="filter-btn" data-filter-region="Asia">Asia</button>
+        <button class="filter-btn" data-filter-region="Europe">Europe</button>
+        <button class="filter-btn" data-filter-region="South America">South America</button>
+      </div>
+      <div class="filter-row">
+        <span class="filter-label">Duration:</span>
+        <button class="filter-btn active" data-filter-duration="All">All</button>
+        <button class="filter-btn" data-filter-duration="1-5">1–5 Days</button>
+        <button class="filter-btn" data-filter-duration="6-10">6–10 Days</button>
+        <button class="filter-btn" data-filter-duration="11+">11+ Days</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Tours Grid ========== -->
+  <section>
+    <div class="container">
+      <p class="tours-count" id="tours-count">Showing 12 of 12 tours</p>
+      <div class="tours-grid" id="tours-grid">
+        <!-- Populated by tours.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Newsletter ========== -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <h2>Get Exclusive Travel Deals</h2>
+        <p>Subscribe to our newsletter and be the first to know about special offers and new destinations.</p>
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">☂ Umbrella Tours &amp; Travel</div>
+          <p class="footer-tagline">Your trusted partner for unforgettable journeys around the world. We bring your travel dreams to life with expertise and care.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>📍 Nairobi, Kenya</p>
+          <p>📞 +254 700 000 000</p>
+          <p>✉️ umbrellatransfersltd@gmail.com</p>
+          <p>🕒 Mon–Fri: 8AM – 6PM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Umbrella Tours &amp; Travel. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/tours.js"></script>
+  <script>
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button');
+      btn.textContent = '✓ Subscribed!';
+      btn.style.background = '#10b981';
+      form.querySelector('input').value = '';
+      setTimeout(() => {
+        btn.textContent = 'Subscribe';
+        btn.style.background = '';
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
