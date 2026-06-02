@@ -20,21 +20,22 @@ if (hamburger && navLinks) {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('open');
+    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
   });
 
-  // Close menu when a link is clicked
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('active');
       navLinks.classList.remove('open');
+      document.body.style.overflow = '';
     });
   });
 
-  // Close menu when clicking outside
   document.addEventListener('click', (e) => {
     if (!navbar.contains(e.target)) {
       hamburger.classList.remove('active');
       navLinks.classList.remove('open');
+      document.body.style.overflow = '';
     }
   });
 }
