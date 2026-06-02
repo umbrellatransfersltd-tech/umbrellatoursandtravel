@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Umbrella Tours & Travel - London's Premier Chauffeur Tour Experience. Premium chauffeur-driven day trips from London to Britain's most iconic destinations.">
-  <title>Umbrella Tours & Travel - London's Premier Chauffeur Tour Experience</title>
+  <title>Umbrella Tours & Travel — London's Premier Chauffeur Tours</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,13 +11,9 @@
 </head>
 <body>
 
-  <!-- ========== Navbar ========== -->
   <nav class="navbar" id="navbar">
     <div class="container navbar-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-emoji">☂</span>
-        Umbrella Tours &amp; Travel
-      </a>
+      <a href="index.html" class="nav-logo"><span class="logo-emoji">☂</span> Umbrella Tours &amp; Travel</a>
       <ul class="nav-links">
         <li><a href="tours.html">Tours</a></li>
         <li><a href="destinations.html">Destinations</a></li>
@@ -26,379 +21,255 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="contact.html" class="btn-book">Book Now</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- ========== Hero Section ========== -->
-  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=1920&q=80');">
-    <div class="hero-overlay"></div>
+  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=1920&q=80');">
     <div class="hero-content">
-      <h1>London's Premier Chauffeur Tour Service</h1>
-      <p>Private, comfortable day trips across England — picked up from your hotel door</p>
-      <div class="search-bar">
-        <input type="text" placeholder="Where would you like to go?" id="hero-destination">
-        <div class="divider"></div>
-        <input type="date" aria-label="Departure date">
-        <div class="divider"></div>
-        <select aria-label="Number of travelers">
-          <option value="">Travelers</option>
-          <option value="1">1 Traveler</option>
-          <option value="2">2 Travelers</option>
-          <option value="3">3 Travelers</option>
-          <option value="4">4 Travelers</option>
-          <option value="5">5 Travelers</option>
-          <option value="6">6 Travelers</option>
-          <option value="7">7 Travelers</option>
-          <option value="8">8 Travelers</option>
-        </select>
-        <button class="btn-search" onclick="window.location.href='tours.html'">🔍 Search</button>
+      <div class="hero-label">☂ &nbsp;London's Premier Chauffeur Service</div>
+      <h1>Explore England<br>in <em>Perfect Style</em></h1>
+      <p>Private chauffeur-driven day trips from London to Britain's most iconic destinations. Door-to-door, expertly guided, all-inclusive.</p>
+      <div class="hero-actions">
+        <a href="tours.html" class="btn-primary">Browse All Tours</a>
+        <a href="contact.html" class="btn-outline-white">Enquire Now</a>
       </div>
     </div>
+    <div class="hero-scroll">Scroll to explore</div>
   </section>
 
-  <!-- ========== Stats Bar ========== -->
-  <div class="stats-bar">
+  <div class="search-wrap">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item fade-in">
-          <div class="stat-icon">🚗</div>
-          <span class="stat-number">200+</span>
-          <span class="stat-label">Tours Available</span>
-        </div>
-        <div class="stat-item fade-in">
-          <div class="stat-icon">🏰</div>
-          <span class="stat-number">50+</span>
-          <span class="stat-label">UK Destinations</span>
-        </div>
-        <div class="stat-item fade-in">
-          <div class="stat-icon">😊</div>
-          <span class="stat-number">8,000+</span>
-          <span class="stat-label">Happy Travelers</span>
-        </div>
-        <div class="stat-item fade-in">
-          <div class="stat-icon">⭐</div>
-          <span class="stat-number">10</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
+      <div class="search-card">
+        <input type="text" placeholder="Where would you like to go?">
+        <input type="date" aria-label="Travel date">
+        <select aria-label="Passengers">
+          <option value="">Passengers</option>
+          <option>1 Person</option><option>2 People</option><option>3 People</option>
+          <option>4 People</option><option>5-8 People</option>
+        </select>
+        <button class="btn-search" onclick="window.location.href='tours.html'">Search Tours</button>
       </div>
     </div>
   </div>
 
-  <!-- ========== Popular Destinations ========== -->
-  <section id="destinations">
+  <div class="stats-strip">
     <div class="container">
-      <h2 class="section-title">Popular Destinations</h2>
-      <p class="section-subtitle">Explore Britain's most captivating regions from London</p>
-      <div class="destinations-grid">
+      <div class="stats-grid">
+        <div class="stat-item fade-in"><span class="stat-icon">🚗</span><span class="stat-number">200+</span><span class="stat-label">Tours Available</span></div>
+        <div class="stat-item fade-in"><span class="stat-icon">🏰</span><span class="stat-number">50+</span><span class="stat-label">UK Destinations</span></div>
+        <div class="stat-item fade-in"><span class="stat-icon">😊</span><span class="stat-number">8,000+</span><span class="stat-label">Happy Travelers</span></div>
+        <div class="stat-item fade-in"><span class="stat-icon">⭐</span><span class="stat-number">10 Yrs</span><span class="stat-label">Experience</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-tag">Popular Destinations</div>
+          <h2 class="section-title">Where Would You<br><span>Like to Go?</span></h2>
+          <p class="section-subtitle">From London's iconic streets to England's most breathtaking countryside</p>
+        </div>
+        <a href="destinations.html" class="view-all">All Destinations →</a>
+      </div>
+      <div class="dest-grid">
         <div class="dest-card fade-in">
           <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="London">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">35 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">London</span>
-            <span class="dest-country">Sightseeing tours of the capital</span>
-          </div>
+          <div class="dest-overlay"></div><span class="dest-badge">35 Tours</span>
+          <div class="dest-info"><span class="dest-name">London</span><span class="dest-country">City Sightseeing</span></div>
         </div>
         <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1580112184751-a2f0f3c79034?w=600&q=80" alt="Oxford & Bicester">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">18 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">Oxford &amp; Bicester</span>
-            <span class="dest-country">University city + luxury shopping</span>
-          </div>
+          <img src="https://images.unsplash.com/photo-1580112184751-a2f0f3c79034?w=600&q=80" alt="Oxford">
+          <div class="dest-overlay"></div><span class="dest-badge">18 Tours</span>
+          <div class="dest-info"><span class="dest-name">Oxford &amp; Bicester</span><span class="dest-country">Central England</span></div>
         </div>
         <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=600&q=80" alt="Dover & Canterbury">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">22 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">Dover &amp; Canterbury</span>
-            <span class="dest-country">White Cliffs + Cathedral + Leeds Castle</span>
-          </div>
+          <img src="https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=600&q=80" alt="Dover">
+          <div class="dest-overlay"></div><span class="dest-badge">22 Tours</span>
+          <div class="dest-info"><span class="dest-name">Dover &amp; Canterbury</span><span class="dest-country">South East England</span></div>
         </div>
         <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=600&q=80" alt="Stonehenge & Bath">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">20 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">Stonehenge &amp; Bath</span>
-            <span class="dest-country">Ancient stones + Roman spa city</span>
-          </div>
+          <img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=600&q=80" alt="Stonehenge">
+          <div class="dest-overlay"></div><span class="dest-badge">20 Tours</span>
+          <div class="dest-info"><span class="dest-name">Stonehenge &amp; Bath</span><span class="dest-country">South West England</span></div>
         </div>
         <div class="dest-card fade-in">
           <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=600&q=80" alt="Cambridge">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">15 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">Cambridge</span>
-            <span class="dest-country">University city + punting on the River Cam</span>
-          </div>
+          <div class="dest-overlay"></div><span class="dest-badge">15 Tours</span>
+          <div class="dest-info"><span class="dest-name">Cambridge</span><span class="dest-country">East England</span></div>
         </div>
         <div class="dest-card fade-in">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Brighton & Coast">
-          <div class="dest-overlay"></div>
-          <span class="dest-badge">16 Tours</span>
-          <div class="dest-info">
-            <span class="dest-name">Brighton &amp; Coast</span>
-            <span class="dest-country">Seaside, Royal Pavilion, Palace Pier</span>
-          </div>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Brighton">
+          <div class="dest-overlay"></div><span class="dest-badge">16 Tours</span>
+          <div class="dest-info"><span class="dest-name">Brighton &amp; Coast</span><span class="dest-country">South East England</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== Featured Tours ========== -->
-  <section style="background: var(--light-gray);">
+  <section style="background:var(--off-white);">
     <div class="container">
-      <h2 class="section-title">Featured Tours</h2>
-      <p class="section-subtitle">Our most popular chauffeur-driven UK experiences</p>
+      <div class="section-header-row">
+        <div>
+          <div class="section-tag">Featured Tours</div>
+          <h2 class="section-title">Our Most Popular<br><span>Day Trips</span></h2>
+          <p class="section-subtitle">Handpicked chauffeur experiences, departing from your London hotel</p>
+        </div>
+        <a href="tours.html" class="view-all">View All Tours →</a>
+      </div>
       <div class="tours-grid">
         <div class="tour-card fade-in">
-          <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="London Sightseeing" loading="lazy">
-            <span class="tour-region-badge">London</span>
-          </div>
+          <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="London" loading="lazy"><span class="tour-region-badge">London</span></div>
           <div class="tour-card-body">
-            <h3 class="tour-title">London Sightseeing</h3>
-            <div class="tour-meta">
-              <span class="tour-duration">⏱ Full Day</span>
-              <span class="tour-price">From £95 <span>/ person</span></span>
-            </div>
-            <div class="tour-rating">
-              <span class="stars">★★★★★</span>
-              <span>4.9 (314 reviews)</span>
-            </div>
-            <a href="contact.html" class="btn-book-tour">Book Now</a>
+            <h3 class="tour-title">London Sightseeing Tour</h3>
+            <div class="tour-meta"><span class="tour-duration">⏱ Full Day</span><span class="tour-price">From £95 <span>/ person</span></span></div>
+            <div class="tour-rating"><span class="stars">★★★★★</span><span>4.9 (312 reviews)</span></div>
+            <a href="contact.html" class="btn-book-tour">Book This Tour</a>
           </div>
         </div>
         <div class="tour-card fade-in">
-          <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1626087422533-a7dd3fe58d1e?w=600&q=80" alt="Warner Bros Studio Harry Potter" loading="lazy">
-            <span class="tour-region-badge">South East England</span>
-          </div>
+          <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1626087422533-a7dd3fe58d1e?w=600&q=80" alt="Harry Potter" loading="lazy"><span class="tour-region-badge">South East</span></div>
           <div class="tour-card-body">
-            <h3 class="tour-title">London to Warner Bros. Studio (Harry Potter)</h3>
-            <div class="tour-meta">
-              <span class="tour-duration">⏱ Full Day</span>
-              <span class="tour-price">From £175 <span>/ person</span></span>
-            </div>
-            <div class="tour-rating">
-              <span class="stars">★★★★★</span>
-              <span>4.9 (214 reviews)</span>
-            </div>
-            <a href="contact.html" class="btn-book-tour">Book Now</a>
+            <h3 class="tour-title">Warner Bros. Studio — Harry Potter</h3>
+            <div class="tour-meta"><span class="tour-duration">⏱ Full Day</span><span class="tour-price">From £175 <span>/ person</span></span></div>
+            <div class="tour-rating"><span class="stars">★★★★★</span><span>4.9 (289 reviews)</span></div>
+            <a href="contact.html" class="btn-book-tour">Book This Tour</a>
           </div>
         </div>
         <div class="tour-card fade-in">
-          <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=600&q=80" alt="Stonehenge and Bath" loading="lazy">
-            <span class="tour-region-badge">South West England</span>
-          </div>
+          <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=600&q=80" alt="Stonehenge" loading="lazy"><span class="tour-region-badge">South West</span></div>
           <div class="tour-card-body">
-            <h3 class="tour-title">London to Stonehenge + Bath</h3>
-            <div class="tour-meta">
-              <span class="tour-duration">⏱ Full Day</span>
-              <span class="tour-price">From £185 <span>/ person</span></span>
-            </div>
-            <div class="tour-rating">
-              <span class="stars">★★★★★</span>
-              <span>4.9 (231 reviews)</span>
-            </div>
-            <a href="contact.html" class="btn-book-tour">Book Now</a>
+            <h3 class="tour-title">Stonehenge, Windsor &amp; Bath</h3>
+            <div class="tour-meta"><span class="tour-duration">⏱ Full Day</span><span class="tour-price">From £185 <span>/ person</span></span></div>
+            <div class="tour-rating"><span class="stars">★★★★★</span><span>4.9 (198 reviews)</span></div>
+            <a href="contact.html" class="btn-book-tour">Book This Tour</a>
           </div>
         </div>
         <div class="tour-card fade-in">
-          <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=600&q=80" alt="Leeds Castle Dover Canterbury" loading="lazy">
-            <span class="tour-region-badge">South East England</span>
-          </div>
+          <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1565372195458-9de0b320ef04?w=600&q=80" alt="Dover" loading="lazy"><span class="tour-region-badge">South East</span></div>
           <div class="tour-card-body">
-            <h3 class="tour-title">London to Leeds Castle + Dover Cliffs + Canterbury</h3>
-            <div class="tour-meta">
-              <span class="tour-duration">⏱ Full Day</span>
-              <span class="tour-price">From £175 <span>/ person</span></span>
-            </div>
-            <div class="tour-rating">
-              <span class="stars">★★★★★</span>
-              <span>4.8 (187 reviews)</span>
-            </div>
-            <a href="contact.html" class="btn-book-tour">Book Now</a>
+            <h3 class="tour-title">Leeds Castle, Dover &amp; Canterbury</h3>
+            <div class="tour-meta"><span class="tour-duration">⏱ Full Day</span><span class="tour-price">From £175 <span>/ person</span></span></div>
+            <div class="tour-rating"><span class="stars">★★★★★</span><span>4.8 (167 reviews)</span></div>
+            <a href="contact.html" class="btn-book-tour">Book This Tour</a>
           </div>
         </div>
         <div class="tour-card fade-in">
-          <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1580112184751-a2f0f3c79034?w=600&q=80" alt="Oxford and Bicester Village" loading="lazy">
-            <span class="tour-region-badge">South West England</span>
-          </div>
+          <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1580112184751-a2f0f3c79034?w=600&q=80" alt="Oxford" loading="lazy"><span class="tour-region-badge">Central England</span></div>
           <div class="tour-card-body">
-            <h3 class="tour-title">London to Oxford + Bicester Village</h3>
-            <div class="tour-meta">
-              <span class="tour-duration">⏱ Full Day</span>
-              <span class="tour-price">From £165 <span>/ person</span></span>
-            </div>
-            <div class="tour-rating">
-              <span class="stars">★★★★★</span>
-              <span>4.8 (189 reviews)</span>
-            </div>
-            <a href="contact.html" class="btn-book-tour">Book Now</a>
+            <h3 class="tour-title">Oxford &amp; Bicester Village</h3>
+            <div class="tour-meta"><span class="tour-duration">⏱ Full Day</span><span class="tour-price">From £165 <span>/ person</span></span></div>
+            <div class="tour-rating"><span class="stars">★★★★★</span><span>4.8 (144 reviews)</span></div>
+            <a href="contact.html" class="btn-book-tour">Book This Tour</a>
           </div>
         </div>
         <div class="tour-card fade-in">
-          <div class="tour-card-img">
-            <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=600&q=80" alt="Cambridge River Cam" loading="lazy">
-            <span class="tour-region-badge">East England</span>
-          </div>
+          <div class="tour-card-img"><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=600&q=80" alt="Cambridge" loading="lazy"><span class="tour-region-badge">East England</span></div>
           <div class="tour-card-body">
-            <h3 class="tour-title">London to Cambridge</h3>
-            <div class="tour-meta">
-              <span class="tour-duration">⏱ Full Day</span>
-              <span class="tour-price">From £155 <span>/ person</span></span>
-            </div>
-            <div class="tour-rating">
-              <span class="stars">★★★★★</span>
-              <span>4.8 (176 reviews)</span>
-            </div>
-            <a href="contact.html" class="btn-book-tour">Book Now</a>
+            <h3 class="tour-title">Cambridge Day Trip</h3>
+            <div class="tour-meta"><span class="tour-duration">⏱ Full Day</span><span class="tour-price">From £155 <span>/ person</span></span></div>
+            <div class="tour-rating"><span class="stars">★★★★★</span><span>4.8 (211 reviews)</span></div>
+            <a href="contact.html" class="btn-book-tour">Book This Tour</a>
           </div>
         </div>
-      </div>
-      <div class="text-center mt-2" style="margin-top: 2.5rem;">
-        <a href="tours.html" style="display:inline-block; background: var(--primary); color: #fff; padding: 14px 40px; border-radius: 30px; font-weight: 700; font-size: 1rem; transition: background 0.3s;">View All Tours</a>
       </div>
     </div>
   </section>
 
-  <!-- ========== Why Choose Us ========== -->
-  <section class="why-us">
+  <section class="why-us-dark">
     <div class="container">
-      <h2 class="section-title">Why Choose Us</h2>
-      <p class="section-subtitle">London's premier chauffeur tour experience</p>
+      <div class="section-header" style="text-align:center;">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="section-title">The Umbrella Difference</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Premium chauffeur service that goes beyond getting from A to B</p>
+      </div>
       <div class="features-grid">
-        <div class="feature-box fade-in">
-          <span class="feature-icon">🚗</span>
-          <h3>Luxury Fleet</h3>
-          <p>Premium Mercedes &amp; BMW vehicles, spotlessly clean</p>
-        </div>
-        <div class="feature-box fade-in">
-          <span class="feature-icon">👨‍✈️</span>
-          <h3>Expert Chauffeurs</h3>
-          <p>Licensed, friendly drivers with deep local knowledge</p>
-        </div>
-        <div class="feature-box fade-in">
-          <span class="feature-icon">🚪</span>
-          <h3>Door-to-Door</h3>
-          <p>Collected from your hotel, Airbnb or home address</p>
-        </div>
-        <div class="feature-box fade-in">
-          <span class="feature-icon">🎟️</span>
-          <h3>All-Inclusive</h3>
-          <p>Entry tickets, parking &amp; fuel all included</p>
-        </div>
+        <div class="feature-box fade-in"><span class="feature-icon">🚗</span><h3>Luxury Fleet</h3><p>Premium Mercedes &amp; BMW vehicles, spotlessly clean and fully insured for your peace of mind.</p></div>
+        <div class="feature-box fade-in"><span class="feature-icon">👨‍✈️</span><h3>Expert Chauffeurs</h3><p>Licensed, friendly drivers with deep local knowledge who double as your personal tour guide.</p></div>
+        <div class="feature-box fade-in"><span class="feature-icon">🚪</span><h3>Door-to-Door</h3><p>Collected from your London hotel, Airbnb, or home — no need to navigate public transport.</p></div>
+        <div class="feature-box fade-in"><span class="feature-icon">🎟️</span><h3>All-Inclusive</h3><p>Entry tickets, parking &amp; fuel all included. No hidden fees — what you see is what you pay.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ========== Testimonials ========== -->
   <section class="testimonials">
     <div class="container">
-      <h2 class="section-title">What Our Travelers Say</h2>
-      <p class="section-subtitle">Real experiences from real adventurers</p>
+      <div class="section-header" style="text-align:center;">
+        <div class="section-tag">Reviews</div>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Real experiences from real travelers</p>
+      </div>
       <div class="testimonials-grid">
         <div class="testimonial-card fade-in">
-          <div class="testimonial-header">
-            <div class="avatar avatar-blue">LO</div>
-            <div>
-              <div class="testimonial-name">Lothes79</div>
-              <div class="testimonial-dest">London Tour</div>
-            </div>
-          </div>
+          <div class="testimonial-header"><div class="avatar" style="background:#0EA5E9;">LO</div><div><div class="testimonial-name">Lothes79</div><div class="testimonial-dest">London City Tour</div></div></div>
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Very professional at all aspects. Driver was polite &amp; punctual, car was very modern &amp; clean. Highly recommend!"</p>
+          <p class="testimonial-text">"Very professional at all aspects. Driver was polite &amp; punctual, car was very modern &amp; clean. Highly recommend their services."</p>
         </div>
         <div class="testimonial-card fade-in">
-          <div class="testimonial-header">
-            <div class="avatar avatar-green">SM</div>
-            <div>
-              <div class="testimonial-name">Sophie M.</div>
-              <div class="testimonial-dest">Stonehenge &amp; Bath</div>
-            </div>
-          </div>
+          <div class="testimonial-header"><div class="avatar" style="background:#0284C7;">SM</div><div><div class="testimonial-name">Sophie M.</div><div class="testimonial-dest">Stonehenge &amp; Bath</div></div></div>
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Driver was so friendly and vehicle was lovely and comfortable. Will certainly use again!"</p>
+          <p class="testimonial-text">"Driver was so friendly and vehicle was lovely and comfortable. Will certainly use again — absolutely wonderful experience!"</p>
         </div>
         <div class="testimonial-card fade-in">
-          <div class="testimonial-header">
-            <div class="avatar avatar-purple">AT</div>
-            <div>
-              <div class="testimonial-name">Amanda T.</div>
-              <div class="testimonial-dest">Warner Bros. Tour</div>
-            </div>
-          </div>
+          <div class="testimonial-header"><div class="avatar" style="background:#0369A1;">AT</div><div><div class="testimonial-name">Amanda T.</div><div class="testimonial-dest">Warner Bros. Tour</div></div></div>
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"The Tesla was spotless, cool with A/C, and even had water bottles. Felt like a movie star!"</p>
+          <p class="testimonial-text">"The Tesla was spotless, cool with A/C, and even had water bottles. Felt like a movie star! Will definitely use again — 5-star experience!"</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== Newsletter ========== -->
   <section class="newsletter">
     <div class="container">
       <div class="newsletter-inner">
         <h2>Get Exclusive Tour Deals</h2>
-        <p>Subscribe to our newsletter and be the first to know about special offers and new UK tour packages.</p>
+        <p>Subscribe for early access to new tours and special offers.</p>
         <form class="newsletter-form" onsubmit="handleNewsletter(event)">
-          <input type="email" placeholder="Enter your email address" required>
+          <input type="email" placeholder="Your email address" required>
           <button type="submit">Subscribe</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- ========== Footer ========== -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
           <div class="footer-logo">☂ Umbrella Tours &amp; Travel</div>
-          <p class="footer-tagline">London's Premier Chauffeur Tour Experience. We take you from your door to Britain's most iconic destinations in style and comfort.</p>
+          <p class="footer-tagline">London's trusted private chauffeur tour operator. Premium day trips to England's most iconic destinations, tailored to you.</p>
         </div>
         <div class="footer-col">
-          <h4>Quick Links</h4>
+          <h4>Tours</h4>
+          <ul>
+            <li><a href="tours.html">London Sightseeing</a></li>
+            <li><a href="tours.html">Warner Bros. Studio</a></li>
+            <li><a href="tours.html">Stonehenge &amp; Bath</a></li>
+            <li><a href="tours.html">Dover &amp; Canterbury</a></li>
+            <li><a href="tours.html">View All Tours</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="tours.html">Tours</a></li>
             <li><a href="destinations.html">Destinations</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Contact Info</h4>
+          <h4>Contact</h4>
           <p>📍 London, United Kingdom</p>
           <p>📞 +44 20 0000 0000</p>
           <p>✉️ umbrellatransfersltd@gmail.com</p>
           <p>🕒 Mon–Sun: 7AM – 9PM</p>
-        </div>
-        <div class="footer-col">
-          <h4>Follow Us</h4>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="Instagram">📸</a>
-            <a href="#" aria-label="Twitter">🐦</a>
-            <a href="#" aria-label="YouTube">▶️</a>
-          </div>
+          <div class="social-links"><a href="#">📘</a><a href="#">📸</a><a href="#">🐦</a><a href="#">▶️</a></div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Umbrella Tours &amp; Travel. All rights reserved.</p>
-      </div>
+      <div class="footer-bottom"><p>© 2024 Umbrella Tours &amp; Travel. All rights reserved. | London, UK</p></div>
     </div>
   </footer>
 
@@ -406,15 +277,10 @@
   <script>
     function handleNewsletter(e) {
       e.preventDefault();
-      const form = e.target;
-      const btn = form.querySelector('button');
+      const btn = e.target.querySelector('button');
       btn.textContent = '✓ Subscribed!';
-      btn.style.background = '#10b981';
-      form.querySelector('input').value = '';
-      setTimeout(() => {
-        btn.textContent = 'Subscribe';
-        btn.style.background = '';
-      }, 3000);
+      e.target.querySelector('input').value = '';
+      setTimeout(() => btn.textContent = 'Subscribe', 3000);
     }
   </script>
 </body>
