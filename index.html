@@ -6,304 +6,427 @@
   <title>Umbrella Tours & Travel — London's Premier Chauffeur Tours</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- ── NAVBAR ───────────────────────────────────────────────── -->
   <nav class="navbar" id="navbar">
-    <div class="container navbar-inner">
-      <a href="index.html" class="nav-logo"><span class="logo-umbrella">☂</span> Umbrella Tours &amp; Travel</a>
-      <ul class="nav-links">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">☂ Umbrella Tours &amp; Travel</a>
+      <ul class="nav-links" id="navLinks">
         <li><a href="tours.html">Tours</a></li>
         <li><a href="destinations.html">Destinations</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html" class="btn-nav-book">Book Now</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- ═══════════════════════════════════════
-       HERO — matches reference site banner
-  ═══════════════════════════════════════ -->
-  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1920&q=80');">
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <!-- Reference: dark cinematic full-screen hero, eyebrow label, large serif H1,
+       sub-paragraph, two CTAs, stats bar at bottom, scroll indicator on right -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1920&q=80');"></div>
     <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <div class="hero-eyebrow">Private Chauffeur Tours &nbsp;·&nbsp; London, Est. 2014</div>
-      <h1 class="hero-headline">The Best Way<br>to See <em>England</em></h1>
-      <p class="hero-sub">Award-winning door-to-door day trips from London to Britain's most iconic landmarks — exclusive, unhurried, and all-inclusive.</p>
-      <div class="hero-ctas">
-        <a href="tours.html" class="btn-primary">Explore Our Tours</a>
-        <a href="#tours-section" class="btn-ghost">Jump to Tours ↓</a>
+
+    <div class="hero-body">
+      <div class="page-container">
+        <p class="hero-eyebrow">Private Chauffeur Tours &nbsp;·&nbsp; London, Est. 2014</p>
+        <h1 class="hero-h1">The Best Way to<br>See <em>England</em></h1>
+        <p class="hero-sub">Award-winning door-to-door day trips from London to Britain's most iconic landmarks — exclusive, unhurried, and all-inclusive.</p>
+        <div class="hero-actions">
+          <a href="#tours" class="btn-hero-solid">Explore Our Tours</a>
+          <a href="#compare" class="btn-hero-outline">Jump to Comparison</a>
+        </div>
       </div>
     </div>
 
-    <!-- Stats bar — exactly as reference site -->
-    <div class="hero-stats">
-      <div class="container">
-        <div class="hero-stats-row">
-          <div class="hero-stat">
-            <span class="hs-num">9</span>
-            <span class="hs-label">Curated Tours</span>
+    <!-- Stats bar — same as reference: 3 stats with dividers -->
+    <div class="hero-statsbar">
+      <div class="page-container">
+        <div class="statsbar-inner">
+          <div class="stat-item">
+            <span class="stat-num">9</span>
+            <span class="stat-label">Curated Tours</span>
           </div>
-          <div class="hs-sep"></div>
-          <div class="hero-stat">
-            <span class="hs-num">8,000+</span>
-            <span class="hs-label">Happy Guests</span>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <span class="stat-num">8,000+</span>
+            <span class="stat-label">Happy Guests</span>
           </div>
-          <div class="hs-sep"></div>
-          <div class="hero-stat">
-            <span class="hs-num">4.9★</span>
-            <span class="hs-label">Average Rating</span>
+          <div class="stat-div"></div>
+          <div class="stat-item">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">Average Rating</span>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-bar"></div>
+    <!-- Scroll indicator — right side, same as reference -->
+    <div class="scroll-hint">
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       3 PILLARS (matches reference "Conversion-Focused / Design-Led / Actionable")
-  ═══════════════════════════════════════ -->
+  <!-- ── 3 PILLARS ─────────────────────────────────────────────
+       Reference: "Conversion-Focused / Design-Led / Actionable"
+       Three equal cards with bold label + description, divided by borders
+  ────────────────────────────────────────────────────────────── -->
   <section class="section-pillars">
-    <div class="container">
-      <div class="pillars-grid">
-        <div class="pillar-card fade-in">
-          <div class="pillar-icon">🚗</div>
-          <h3>Private &amp; Exclusive</h3>
-          <p>Every tour is exclusively yours — no shared coaches, no strangers, no fixed schedules. Just you and your group, at your own pace.</p>
+    <div class="page-container">
+      <div class="pillars-row">
+
+        <div class="pillar fade-in">
+          <h3 class="pillar-title">Exclusive &amp; Private</h3>
+          <p class="pillar-desc">Every tour is exclusively yours — no shared coaches, no strangers. Just you and your group, at your own pace, with a dedicated chauffeur throughout.</p>
         </div>
-        <div class="pillar-card fade-in">
-          <div class="pillar-icon">👨‍✈️</div>
-          <h3>Expert Chauffeur-Guides</h3>
-          <p>Licensed, knowledgeable drivers who double as your personal guide — sharing stories, history and local secrets along the way.</p>
+
+        <div class="pillar-sep"></div>
+
+        <div class="pillar fade-in">
+          <h3 class="pillar-title">Expert Chauffeur-Guides</h3>
+          <p class="pillar-desc">Our licensed, knowledgeable drivers bring each destination to life — sharing stories, history and local secrets you won't find in any guidebook.</p>
         </div>
-        <div class="pillar-card fade-in">
-          <div class="pillar-icon">🎟️</div>
-          <h3>Truly All-Inclusive</h3>
-          <p>Entry tickets, parking, fuel and hotel pickup are all included. The price you see is the price you pay — zero hidden extras.</p>
+
+        <div class="pillar-sep"></div>
+
+        <div class="pillar fade-in">
+          <h3 class="pillar-title">Truly All-Inclusive</h3>
+          <p class="pillar-desc">Entry tickets, parking, fuel and hotel pickup are all included. Each tour concludes with a clear verdict on what makes it special and unmissable.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       TOUR SECTIONS — numbered like reference site (01, 02, 03)
-       Each mirrors the GetYourGuide / Intrepid / Black Tomato analysis layout
-  ═══════════════════════════════════════ -->
-  <div id="tours-section">
+  <!-- ── NUMBERED TOUR SECTIONS ──────────────────────────────────
+       Reference: 01 GetYourGuide / 02 Intrepid / 03 Black Tomato
+       Each: number + category + H2 title + tagline + stat badges
+             + Verdict card + "Best for:" + expandable feature list
+             + full-width image
+  ────────────────────────────────────────────────────────────── -->
+  <div id="tours">
 
-    <!-- 01 London Sightseeing -->
-    <section class="tour-feature-section" id="tour-london">
-      <div class="container">
-        <div class="tfs-inner">
-          <div class="tfs-left fade-in">
-            <div class="tfs-num">01</div>
-            <div class="tfs-category">London City Tour</div>
-            <h2 class="tfs-title">London<br>Sightseeing Tour</h2>
-            <div class="tfs-tags">
-              <span class="tag">Full Day</span>
-              <span class="tag">★ 4.9</span>
-              <span class="tag">From £95 / person</span>
-              <span class="tag">Door-to-Door</span>
-            </div>
-            <div class="verdict-card">
-              <div class="verdict-label">Verdict</div>
-              <p>Our most popular tour — ideal for first-time visitors to London. A full day covering every iconic landmark with a knowledgeable private chauffeur, at a pace that suits you perfectly.</p>
-              <span class="verdict-best">Best for: First-time visitors &amp; families</span>
-            </div>
+    <!-- ── 01 London Sightseeing ─── -->
+    <section class="tour-section" id="tour-london">
+      <div class="page-container">
+
+        <div class="ts-header">
+          <div class="ts-meta">
+            <span class="ts-num">01</span>
+            <span class="ts-category">London City Tours</span>
           </div>
-          <div class="tfs-right fade-in">
-            <div class="tfs-img-wrap">
-              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80" alt="London Sightseeing" loading="lazy">
-            </div>
-            <div class="tfs-features">
-              <h4>Key Tour Highlights</h4>
-              <ul>
-                <li><strong>Iconic Landmarks</strong> — Big Ben, Tower Bridge, Buckingham Palace, Westminster Abbey and more in one perfect day.</li>
-                <li><strong>Hotel Pickup &amp; Drop-off</strong> — Collected from your London hotel, Airbnb or address — no stress, no navigation.</li>
-                <li><strong>Photo Stops Included</strong> — Plenty of time at each landmark for photos, exploration and soaking it all in.</li>
-                <li><strong>Flexible Itinerary</strong> — Tell us your must-sees and we'll prioritise them. It's your day, entirely.</li>
-              </ul>
-              <a href="contact.html" class="btn-book-tour">Book This Tour →</a>
-            </div>
+          <h2 class="ts-title">London Sightseeing Tour</h2>
+          <p class="ts-tagline">The Classic London Experience</p>
+          <div class="ts-badges">
+            <span class="badge">Full Day</span>
+            <span class="badge">★ 4.9</span>
+            <span class="badge badge-accent">From £95 / person</span>
+            <span class="badge">Door-to-Door</span>
           </div>
         </div>
+
+        <div class="ts-body">
+          <div class="ts-left">
+
+            <!-- Verdict card — same dark box as reference -->
+            <div class="verdict-box">
+              <span class="verdict-pill">Verdict</span>
+              <p>London Sightseeing is our most popular tour — ideal for first-time visitors. Covering every major landmark in one full day with a knowledgeable private chauffeur, it combines maximum discovery with total comfort and zero stress.</p>
+              <p class="verdict-best">Best for: First-time visitors &amp; families</p>
+            </div>
+
+            <!-- Feature list — first item open, rest collapsed, exact reference pattern -->
+            <div class="feature-list">
+              <h4 class="fl-heading">Key Tour Highlights</h4>
+
+              <div class="fl-item fl-open">
+                <div class="fl-title">Hotel Pickup &amp; Drop-Off</div>
+                <div class="fl-body">Collected from your London hotel, Airbnb or any address. No navigating the Underground with luggage — your chauffeur is waiting at the door when you're ready.</div>
+              </div>
+              <div class="fl-item">
+                <div class="fl-title">Iconic Landmarks</div>
+              </div>
+              <div class="fl-item">
+                <div class="fl-title">Photo Stops at Every Site</div>
+              </div>
+              <div class="fl-item">
+                <div class="fl-title">Flexible, Personalised Route</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="ts-right">
+            <div class="ts-img fade-in">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80" alt="London Sightseeing Tour" loading="lazy">
+            </div>
+            <a href="contact.html" class="btn-book-section">Book This Tour →</a>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- 02 Stonehenge Windsor Bath -->
-    <section class="tour-feature-section alt-bg" id="tour-stonehenge">
-      <div class="container">
-        <div class="tfs-inner reverse">
-          <div class="tfs-left fade-in">
-            <div class="tfs-num">02</div>
-            <div class="tfs-category">South West England</div>
-            <h2 class="tfs-title">Stonehenge,<br>Windsor &amp; Bath</h2>
-            <div class="tfs-tags">
-              <span class="tag">Full Day</span>
-              <span class="tag">★ 4.9</span>
-              <span class="tag">From £185 / person</span>
-              <span class="tag">3 Sites in 1 Day</span>
-            </div>
-            <div class="verdict-card">
-              <div class="verdict-label">Verdict</div>
-              <p>Three of England's most extraordinary sites in a single day. Ancient prehistoric stones, a Royal Palace and a breathtaking Georgian spa city — this tour is consistently rated our guests' favourite.</p>
-              <span class="verdict-best">Best for: History lovers &amp; culture seekers</span>
-            </div>
+    <!-- ── 02 Stonehenge Windsor Bath ─── -->
+    <section class="tour-section ts-alt" id="tour-stonehenge">
+      <div class="page-container">
+
+        <div class="ts-header">
+          <div class="ts-meta">
+            <span class="ts-num">02</span>
+            <span class="ts-category">South West England</span>
           </div>
-          <div class="tfs-right fade-in">
-            <div class="tfs-img-wrap">
-              <img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=900&q=80" alt="Stonehenge" loading="lazy">
-            </div>
-            <div class="tfs-features">
-              <h4>Key Tour Highlights</h4>
-              <ul>
-                <li><strong>Stonehenge</strong> — Stand before the ancient prehistoric stones and feel thousands of years of history.</li>
-                <li><strong>Windsor Castle</strong> — The world's oldest and largest occupied castle, home to the British Royal Family.</li>
-                <li><strong>City of Bath</strong> — Georgian masterpiece, UNESCO World Heritage Site with Roman Baths and stunning architecture.</li>
-                <li><strong>All Tickets Included</strong> — Entry to Stonehenge and Windsor Castle are fully included in your price.</li>
-              </ul>
-              <a href="contact.html" class="btn-book-tour">Book This Tour →</a>
-            </div>
+          <h2 class="ts-title">Stonehenge, Windsor &amp; Bath</h2>
+          <p class="ts-tagline">Three Icons in One Perfect Day</p>
+          <div class="ts-badges">
+            <span class="badge">Full Day</span>
+            <span class="badge">★ 4.9</span>
+            <span class="badge badge-accent">From £185 / person</span>
+            <span class="badge">3 Sites in 1 Day</span>
+            <span class="badge">Tickets Included</span>
           </div>
         </div>
+
+        <div class="ts-body">
+          <div class="ts-left">
+
+            <div class="verdict-box">
+              <span class="verdict-pill">Verdict</span>
+              <p>Our most beloved full-day tour. Stonehenge's prehistoric mystery, Windsor's Royal grandeur and Bath's Georgian elegance — three of England's greatest sites, seamlessly woven into one extraordinary journey you'll never forget.</p>
+              <p class="verdict-best">Best for: History lovers &amp; culture seekers</p>
+            </div>
+
+            <div class="feature-list">
+              <h4 class="fl-heading">Key Tour Highlights</h4>
+
+              <div class="fl-item fl-open">
+                <div class="fl-title">All Entry Tickets Pre-Booked</div>
+                <div class="fl-body">Stonehenge and Windsor Castle tickets are included and booked in advance — so you skip queues and walk straight in, making the most of every precious minute on tour.</div>
+              </div>
+              <div class="fl-item">
+                <div class="fl-title">Stonehenge — Ancient &amp; Mysterious</div>
+              </div>
+              <div class="fl-item">
+                <div class="fl-title">Windsor Castle — Royal Residence</div>
+              </div>
+              <div class="fl-item">
+                <div class="fl-title">City of Bath — UNESCO Heritage</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="ts-right">
+            <div class="ts-img fade-in">
+              <img src="https://images.unsplash.com/photo-1599833975787-5c143f373c30?w=900&q=80" alt="Stonehenge Windsor Bath" loading="lazy">
+            </div>
+            <a href="contact.html" class="btn-book-section">Book This Tour →</a>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- 03 Warner Bros Harry Potter -->
-    <section class="tour-feature-section" id="tour-hp">
-      <div class="container">
-        <div class="tfs-inner fade-in">
-          <div class="tfs-left fade-in">
-            <div class="tfs-num">03</div>
-            <div class="tfs-category">Film &amp; Entertainment</div>
-            <h2 class="tfs-title">Warner Bros.<br>Harry Potter Studio</h2>
-            <div class="tfs-tags">
-              <span class="tag">Full Day</span>
-              <span class="tag">★ 4.9</span>
-              <span class="tag">From £175 / person</span>
-              <span class="tag">Studio Tickets Included</span>
-            </div>
-            <div class="verdict-card">
-              <div class="verdict-label">Verdict</div>
-              <p>For Harry Potter fans, this is the ultimate experience. Walk through the actual sets, costumes and props used in filming. Studio entry tickets are included and our chauffeur takes you door-to-door in complete comfort.</p>
-              <span class="verdict-best">Best for: Harry Potter fans &amp; families with children</span>
-            </div>
+    <!-- ── 03 Warner Bros Harry Potter ─── -->
+    <section class="tour-section" id="tour-hp">
+      <div class="page-container">
+
+        <div class="ts-header">
+          <div class="ts-meta">
+            <span class="ts-num">03</span>
+            <span class="ts-category">Film &amp; Entertainment</span>
           </div>
-          <div class="tfs-right fade-in">
-            <div class="tfs-img-wrap">
-              <img src="https://images.unsplash.com/photo-1626087422533-a7dd3fe58d1e?w=900&q=80" alt="Harry Potter Studio" loading="lazy">
-            </div>
-            <div class="tfs-features">
-              <h4>Key Tour Highlights</h4>
-              <ul>
-                <li><strong>Real Film Sets</strong> — Walk through the Great Hall, Dumbledore's Office, Diagon Alley and more.</li>
-                <li><strong>Tickets Pre-Booked</strong> — Warner Bros. Studio tickets are included and booked in advance — no queues.</li>
-                <li><strong>Private Transport</strong> — Comfortable, air-conditioned vehicle direct from your London hotel.</li>
-                <li><strong>Expert Narration</strong> — Your chauffeur shares behind-the-scenes facts and stories throughout the journey.</li>
-              </ul>
-              <a href="contact.html" class="btn-book-tour">Book This Tour →</a>
-            </div>
+          <h2 class="ts-title">Warner Bros. Harry Potter Studio</h2>
+          <p class="ts-tagline">The Ultimate Fan Experience</p>
+          <div class="ts-badges">
+            <span class="badge">Full Day</span>
+            <span class="badge">★ 4.9</span>
+            <span class="badge badge-accent">From £175 / person</span>
+            <span class="badge">Studio Tickets Included</span>
           </div>
         </div>
+
+        <div class="ts-body">
+          <div class="ts-left">
+
+            <div class="verdict-box">
+              <span class="verdict-pill">Verdict</span>
+              <p>For Harry Potter fans, this is the ultimate pilgrimage. Walk through the actual Great Hall, see real costumes, sets and props from all eight films. Studio tickets are included — your chauffeur handles everything so you can focus on the magic.</p>
+              <p class="verdict-best">Best for: Harry Potter fans &amp; families with children</p>
+            </div>
+
+            <div class="feature-list">
+              <h4 class="fl-heading">Key Tour Highlights</h4>
+
+              <div class="fl-item fl-open">
+                <div class="fl-title">Cinematic Visuals &amp; Real Film Sets</div>
+                <div class="fl-body">Walk through the Great Hall, Dumbledore's Office, Diagon Alley and the Platform 9¾ replica — the actual sets built and used during filming, bringing the wizarding world to vivid life.</div>
+              </div>
+              <div class="fl-item">
+                <div class="fl-title">Tickets Pre-Booked — No Queues</div>
+              </div>
+              <div class="fl-item">
+                <div class="fl-title">Private Door-to-Door Transport</div>
+              </div>
+              <div class="fl-item">
+                <div class="fl-title">Low-Friction Booking &amp; Enquiry</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="ts-right">
+            <div class="ts-img fade-in">
+              <img src="https://images.unsplash.com/photo-1626087422533-a7dd3fe58d1e?w=900&q=80" alt="Harry Potter Studio Tour" loading="lazy">
+            </div>
+            <a href="contact.html" class="btn-book-section">Book This Tour →</a>
+          </div>
+        </div>
+
       </div>
     </section>
 
-  </div><!-- end tours-section -->
+  </div><!-- /#tours -->
 
-  <!-- ═══════════════════════════════════════
-       FULL COMPARISON TABLE — mirrors reference "Side-by-Side / Full Comparison"
-  ═══════════════════════════════════════ -->
-  <section class="section-comparison">
-    <div class="container">
-      <div class="comp-header fade-in">
-        <p class="comp-tag">Side-by-Side</p>
-        <h2 class="comp-title">Full Tour Comparison</h2>
-        <p class="comp-sub">A structured overview of our most popular chauffeur day trips from London.</p>
+  <!-- ── FULL COMPARISON TABLE ─────────────────────────────────
+       Reference: "Side-by-Side / Full Comparison" dark section
+       Header + sub-header columns with numbers + full table
+  ────────────────────────────────────────────────────────────── -->
+  <section class="section-compare" id="compare">
+    <div class="page-container">
+
+      <div class="compare-header fade-in">
+        <p class="section-eyebrow">Side-by-Side</p>
+        <h2 class="section-h2">Full Tour Comparison</h2>
+        <p class="section-sub">A structured overview of our most popular chauffeur day trips from London.</p>
       </div>
-      <div class="comp-table-wrap fade-in">
-        <table class="comp-table">
-          <thead>
-            <tr>
-              <th>Feature</th>
-              <th><span class="th-num">01</span> London</th>
-              <th><span class="th-num">02</span> Stonehenge &amp; Bath</th>
-              <th><span class="th-num">03</span> Harry Potter</th>
-            </tr>
-          </thead>
+
+      <div class="compare-labels fade-in">
+        <div class="cl-spacer"></div>
+        <div class="cl-item"><span class="cl-num">01</span> London Sightseeing</div>
+        <div class="cl-item"><span class="cl-num">02</span> Stonehenge &amp; Bath</div>
+        <div class="cl-item"><span class="cl-num">03</span> Harry Potter</div>
+      </div>
+
+      <div class="compare-table-wrap fade-in">
+        <table class="compare-table">
           <tbody>
-            <tr><td>Duration</td><td>Full Day (8–10 hrs)</td><td>Full Day (10–12 hrs)</td><td>Full Day (8–10 hrs)</td></tr>
-            <tr><td>Starting Price</td><td>From £95 / person</td><td>From £185 / person</td><td>From £175 / person</td></tr>
-            <tr><td>Tickets Included</td><td>—</td><td>Stonehenge + Windsor</td><td>Warner Bros. Studio</td></tr>
-            <tr><td>Hotel Pickup</td><td>✓ Included</td><td>✓ Included</td><td>✓ Included</td></tr>
-            <tr><td>Group Size</td><td>Up to 8 guests</td><td>Up to 8 guests</td><td>Up to 8 guests</td></tr>
-            <tr><td>Best For</td><td>First-time visitors</td><td>History &amp; culture lovers</td><td>Harry Potter fans</td></tr>
-            <tr><td>Rating</td><td>★★★★★ 4.9</td><td>★★★★★ 4.9</td><td>★★★★★ 4.9</td></tr>
+            <tr>
+              <td class="ct-feature">Primary Goal</td>
+              <td>Iconic city landmarks in one day</td>
+              <td>Historic England — 3 sites</td>
+              <td>Immersive fan experience</td>
+            </tr>
+            <tr>
+              <td class="ct-feature">Visual Style</td>
+              <td>Classic, sightseeing, familiar</td>
+              <td>Historic, cultural, scenic</td>
+              <td>Cinematic, magical, editorial</td>
+            </tr>
+            <tr>
+              <td class="ct-feature">Starting Price</td>
+              <td>From £95 / person</td>
+              <td>From £185 / person</td>
+              <td>From £175 / person</td>
+            </tr>
+            <tr>
+              <td class="ct-feature">Tickets Included</td>
+              <td>—</td>
+              <td>Stonehenge + Windsor Castle</td>
+              <td>Warner Bros. Studio</td>
+            </tr>
+            <tr>
+              <td class="ct-feature">Duration</td>
+              <td>Full Day (8–10 hrs)</td>
+              <td>Full Day (10–12 hrs)</td>
+              <td>Full Day (8–10 hrs)</td>
+            </tr>
+            <tr>
+              <td class="ct-feature">Trust Signals</td>
+              <td>4.9★, 8,000+ guests</td>
+              <td>4.9★, tickets pre-booked</td>
+              <td>4.9★, no hidden extras</td>
+            </tr>
+            <tr>
+              <td class="ct-feature">Best For</td>
+              <td>First-time visitors &amp; families</td>
+              <td>History &amp; culture lovers</td>
+              <td>Harry Potter fans</td>
+            </tr>
           </tbody>
         </table>
       </div>
-      <div class="comp-cta">
-        <a href="tours.html" class="btn-primary">View All 9 Tours →</a>
+
+      <div class="compare-footer fade-in">
+        <a href="tours.html" class="btn-white-outline">View All 9 Tours →</a>
       </div>
+
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       4 KEY TAKEAWAYS — mirrors reference "4 Key Takeaways" section
-  ═══════════════════════════════════════ -->
+  <!-- ── 4 KEY TAKEAWAYS ────────────────────────────────────────
+       Reference: "Actionable Insights / 4 Key Takeaways"
+       Four cards with emoji icon, bold title, paragraph
+  ────────────────────────────────────────────────────────────── -->
   <section class="section-takeaways">
-    <div class="container">
+    <div class="page-container">
+
       <div class="takeaways-header fade-in">
-        <p class="comp-tag">Why Choose Umbrella</p>
-        <h2 class="comp-title">4 Reasons Guests Choose Us</h2>
+        <p class="section-eyebrow dark">Actionable Insights</p>
+        <h2 class="section-h2 dark">4 Reasons Guests Choose Umbrella</h2>
       </div>
+
       <div class="takeaways-grid">
-        <div class="takeaway-card fade-in">
-          <div class="tk-icon">🚪</div>
-          <h3>Door-to-Door, Every Time</h3>
-          <p>We collect you from your hotel, Airbnb or home address. No taxis to book, no public transport with luggage, no stress — just walk outside and we're there.</p>
+
+        <div class="takeaway fade-in">
+          <span class="tk-icon">🚪</span>
+          <h3>Door-to-Door is the First Comfort Gate</h3>
+          <p>Every top travel experience removes friction from the start. Being collected from your exact address eliminates the stress of navigating an unfamiliar city — setting the tone for the entire day.</p>
         </div>
-        <div class="takeaway-card fade-in">
-          <div class="tk-icon">🛡️</div>
-          <h3>Trust Signals That Matter</h3>
-          <p>8,000+ guests, 4.9-star average, fully licensed and insured vehicles — every detail that reduces anxiety and lets you focus on enjoying your trip.</p>
+
+        <div class="takeaway fade-in">
+          <span class="tk-icon">🛡️</span>
+          <h3>Trust Signals Must Be Above the Fold</h3>
+          <p>8,000+ guests, 4.9-star ratings, fully licensed &amp; insured vehicles — every trust signal reduces anxiety before you book. We put them front and centre because they matter most.</p>
         </div>
-        <div class="takeaway-card fade-in">
-          <div class="tk-icon">📖</div>
-          <h3>Stories, Not Just Sights</h3>
-          <p>Our chauffeurs are passionate about British history and culture. They don't just drive — they bring each destination to life with insider knowledge and genuine enthusiasm.</p>
+
+        <div class="takeaway fade-in">
+          <span class="tk-icon">📖</span>
+          <h3>Storytelling Sells the Experience</h3>
+          <p>Our chauffeurs don't just drive — they narrate. The more a destination comes alive through stories, history and local insight, the more memorable and valuable the experience feels.</p>
         </div>
-        <div class="takeaway-card fade-in">
-          <div class="tk-icon">💬</div>
-          <h3>Book the Right Way</h3>
-          <p>Group booking? Custom itinerary? Complex requirements? Contact us directly — a real person will help you design the perfect day. No chatbots, no scripts.</p>
+
+        <div class="takeaway fade-in">
+          <span class="tk-icon">💬</span>
+          <h3>Match Your Enquiry to Your Needs</h3>
+          <p>"Book Now" works for straightforward bookings. For groups, custom itineraries or special occasions — contact us directly. A real person will craft exactly the right day for you.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       TESTIMONIALS
-  ═══════════════════════════════════════ -->
+  <!-- ── TESTIMONIALS ──────────────────────────────────────────── -->
   <section class="section-testimonials">
-    <div class="container">
+    <div class="page-container">
       <div class="testi-header fade-in">
-        <p class="comp-tag">Guest Reviews</p>
-        <h2 class="comp-title">What Our Guests Say</h2>
+        <p class="section-eyebrow dark">Guest Reviews</p>
+        <h2 class="section-h2 dark">What Our Guests Say</h2>
       </div>
       <div class="testi-grid">
         <div class="testi-card fade-in">
-          <p class="testi-text">"Very professional at all aspects. Driver was polite &amp; punctual, car was very modern &amp; clean. Absolutely loved the experience — highly recommend!"</p>
-          <div class="testi-foot">
-            <div class="testi-avatar" style="background:#0EA5E9;">LO</div>
+          <p class="testi-quote">"Very professional at all aspects. Driver was polite &amp; punctual, car was very modern &amp; clean. Absolutely loved the experience — highly recommend!"</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background:#0EA5E9;">LO</div>
             <div>
               <div class="testi-name">Lothes79</div>
               <div class="testi-tour">London City Tour</div>
@@ -312,9 +435,9 @@
           </div>
         </div>
         <div class="testi-card fade-in">
-          <p class="testi-text">"Driver was so friendly and the vehicle was lovely and comfortable. Will certainly use again. An absolutely wonderful experience — cannot fault them!"</p>
-          <div class="testi-foot">
-            <div class="testi-avatar" style="background:#0284C7;">SM</div>
+          <p class="testi-quote">"Driver was so friendly and the vehicle was lovely and comfortable. Will certainly use again. An absolutely wonderful experience — cannot fault them!"</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background:#0284C7;">SM</div>
             <div>
               <div class="testi-name">Sophie M.</div>
               <div class="testi-tour">Stonehenge &amp; Bath</div>
@@ -323,9 +446,9 @@
           </div>
         </div>
         <div class="testi-card fade-in">
-          <p class="testi-text">"The Tesla was spotless, cool with A/C, and even had water bottles. Felt like a movie star! Definitely using Umbrella again — a genuine 5-star experience!"</p>
-          <div class="testi-foot">
-            <div class="testi-avatar" style="background:#0369A1;">AT</div>
+          <p class="testi-quote">"The Tesla was spotless, cool with A/C, and even had water bottles. Felt like a movie star! Definitely using Umbrella again — a genuine 5-star experience!"</p>
+          <div class="testi-author">
+            <div class="testi-av" style="background:#0369A1;">AT</div>
             <div>
               <div class="testi-name">Amanda T.</div>
               <div class="testi-tour">Warner Bros. Studio</div>
@@ -337,24 +460,25 @@
     </div>
   </section>
 
-  <!-- CTA Banner -->
-  <section class="section-cta" style="background-image:url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80');">
+  <!-- ── CTA BANNER ───────────────────────────────────────────── -->
+  <section class="section-cta">
+    <div class="cta-bg" style="background-image:url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80');"></div>
     <div class="cta-overlay"></div>
-    <div class="container cta-inner">
-      <p class="comp-tag light-tag">Ready to Travel?</p>
-      <h2 class="cta-title">Book Your Private<br>Chauffeur Tour Today</h2>
+    <div class="page-container cta-body">
+      <p class="section-eyebrow light">Ready to Travel?</p>
+      <h2 class="cta-h2">Book Your Private Chauffeur Tour Today</h2>
       <p class="cta-sub">All tours depart from London. Flexible dates, no hidden fees, unforgettable memories.</p>
-      <div class="cta-btns">
-        <a href="tours.html" class="btn-primary">Browse All Tours</a>
-        <a href="contact.html" class="btn-ghost">Get a Custom Quote</a>
+      <div class="cta-actions">
+        <a href="tours.html" class="btn-hero-solid">Browse All Tours</a>
+        <a href="contact.html" class="btn-hero-outline">Get a Custom Quote</a>
       </div>
     </div>
   </section>
 
-  <!-- Newsletter -->
+  <!-- ── NEWSLETTER ────────────────────────────────────────────── -->
   <section class="section-newsletter">
-    <div class="container">
-      <div class="nl-inner">
+    <div class="page-container">
+      <div class="nl-row">
         <div class="nl-text">
           <h2>Get Exclusive Tour Deals</h2>
           <p>Subscribe for early access to new routes and seasonal offers.</p>
@@ -367,21 +491,21 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
   <footer class="site-footer">
-    <div class="container">
+    <div class="page-container">
       <div class="footer-grid">
-        <div class="footer-col brand-col">
+        <div class="fc-brand">
           <div class="footer-logo">☂ Umbrella Tours &amp; Travel</div>
-          <p class="footer-tagline">London's trusted private chauffeur tour operator. Premium day trips to England's most iconic destinations, tailored to you.</p>
-          <div class="social-links">
+          <p>London's trusted private chauffeur tour operator. Premium day trips to England's most iconic destinations, tailored to you.</p>
+          <div class="social-row">
             <a href="#" aria-label="Facebook">📘</a>
             <a href="#" aria-label="Instagram">📸</a>
             <a href="#" aria-label="Twitter">🐦</a>
             <a href="#" aria-label="YouTube">▶️</a>
           </div>
         </div>
-        <div class="footer-col">
+        <div class="fc-links">
           <h4>Tours</h4>
           <ul>
             <li><a href="tours.html">London Sightseeing</a></li>
@@ -391,7 +515,7 @@
             <li><a href="tours.html">View All Tours</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="fc-links">
           <h4>Company</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -400,7 +524,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div class="fc-links">
           <h4>Contact</h4>
           <p>📍 London, United Kingdom</p>
           <p>📞 +44 20 0000 0000</p>
@@ -416,6 +540,15 @@
 
   <script src="js/main.js"></script>
   <script>
+    // Feature list accordion — click to expand/collapse
+    document.querySelectorAll('.fl-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const isOpen = item.classList.contains('fl-open');
+        item.closest('.feature-list').querySelectorAll('.fl-item').forEach(i => i.classList.remove('fl-open'));
+        if (!isOpen) item.classList.add('fl-open');
+      });
+    });
+
     function handleNewsletter(e) {
       e.preventDefault();
       const btn = e.target.querySelector('button');
