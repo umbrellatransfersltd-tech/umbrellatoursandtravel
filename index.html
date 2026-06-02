@@ -27,7 +27,7 @@
   </nav>
 
   <!-- HERO — cinematic full-screen with stats bar -->
-  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=1920&q=80');">
+  <section class="hero" style="background-image:url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1920&q=80');">
     <div class="hero-overlay"></div>
     <div class="hero-content container">
       <div class="hero-eyebrow">
@@ -36,6 +36,35 @@
       </div>
       <h1 class="hero-headline">Discover England<br>in <em>Private Style</em></h1>
       <p class="hero-sub">Door-to-door chauffeur day trips from London to Britain's most iconic landmarks. Exclusive, unhurried, all-inclusive.</p>
+      <div class="hero-search-bar">
+        <div class="hsb-inner">
+          <div class="hsb-field">
+            <span class="hsb-icon">📍</span>
+            <select onchange="if(this.value) window.location='tours.html'" aria-label="Choose a destination">
+              <option value="">Where would you like to go?</option>
+              <option value="tours.html">London Sightseeing</option>
+              <option value="tours.html">Oxford &amp; Bicester Village</option>
+              <option value="tours.html">Stonehenge, Windsor &amp; Bath</option>
+              <option value="tours.html">Dover, Leeds Castle &amp; Canterbury</option>
+              <option value="tours.html">Cambridge Day Trip</option>
+              <option value="tours.html">Warner Bros. Studio</option>
+              <option value="tours.html">Brighton &amp; Sussex Coast</option>
+            </select>
+          </div>
+          <div class="hsb-divider"></div>
+          <div class="hsb-field">
+            <span class="hsb-icon">👥</span>
+            <select aria-label="Number of guests">
+              <option value="">Number of guests</option>
+              <option>1–2 guests</option>
+              <option>3–4 guests</option>
+              <option>5–8 guests</option>
+              <option>9+ guests (Group)</option>
+            </select>
+          </div>
+          <a href="tours.html" class="hsb-btn">Search Tours</a>
+        </div>
+      </div>
       <div class="hero-actions">
         <a href="tours.html" class="btn-hero-primary">Explore All Tours</a>
         <a href="contact.html" class="btn-hero-ghost">Enquire Now →</a>
@@ -280,6 +309,46 @@
               <h3>All-Inclusive Pricing</h3>
               <p>Entry tickets, parking & fuel all included. No hidden extras — the price you see is what you pay.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION — Editorial Insights / Promise Cards -->
+  <section class="section-insights">
+    <div class="container">
+      <div class="insights-grid">
+        <div class="insight-card fade-in">
+          <div class="ic-number">01</div>
+          <div class="ic-body">
+            <span class="ic-tag">Tailored for You</span>
+            <h3>Every Tour, Personalised</h3>
+            <p>Tell us your interests — we adjust the pace, stops and experience so no two journeys are ever the same.</p>
+          </div>
+        </div>
+        <div class="insight-card fade-in">
+          <div class="ic-number">02</div>
+          <div class="ic-body">
+            <span class="ic-tag">Zero Stress</span>
+            <h3>We Handle Everything</h3>
+            <p>Tickets, parking, routing and hotel pickup — all arranged before you even step outside.</p>
+          </div>
+        </div>
+        <div class="insight-card fade-in">
+          <div class="ic-number">03</div>
+          <div class="ic-body">
+            <span class="ic-tag">Value Guaranteed</span>
+            <h3>All-Inclusive, No Surprises</h3>
+            <p>Every fare includes entry tickets, transport and gratuities. The price you see is the price you pay.</p>
+          </div>
+        </div>
+        <div class="insight-card fade-in">
+          <div class="ic-number">04</div>
+          <div class="ic-body">
+            <span class="ic-tag">Trusted Since 2014</span>
+            <h3>8,000+ Happy Travellers</h3>
+            <p>A decade of 5-star reviews from guests worldwide speaks louder than any promise we could make.</p>
           </div>
         </div>
       </div>
