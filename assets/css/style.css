@@ -9,7 +9,7 @@
    ============================================================ */
 
 /* ─── Google Fonts ─────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
 /* ─── CSS Custom Properties ─────────────────────────────────── */
 :root {
@@ -20,12 +20,13 @@
   --color-text:       #222222;
   --color-text-light: #555555;
   --color-text-muted: #888888;
-  --color-surface:    #F8F9FA;
+  --color-surface:    #faf8f5;
   --color-border:     #E5E7EB;
   --color-overlay:    rgba(15, 41, 64, 0.72);
 
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'DM Mono', 'Courier New', monospace;
 
   --fw-light:   300;
   --fw-regular: 400;
@@ -124,9 +125,9 @@ h6 { font-size: var(--fs-md); }
 p { color: var(--color-text-light); line-height: 1.8; }
 
 .label {
-  font-family: var(--font-body);
-  font-size: var(--fs-xs);
-  font-weight: var(--fw-semibold);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: var(--fw-medium);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-secondary);
@@ -443,10 +444,10 @@ p { color: var(--color-text-light); line-height: 1.8; }
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    135deg,
-    rgba(15, 41, 64, 0.78) 0%,
-    rgba(15, 41, 64, 0.55) 60%,
-    rgba(15, 41, 64, 0.40) 100%
+    to bottom,
+    rgba(15, 41, 64, 0.82) 0%,
+    rgba(15, 41, 64, 0.70) 50%,
+    rgba(15, 41, 64, 0.88) 100%
   );
 }
 .hero__content {
@@ -460,22 +461,22 @@ p { color: var(--color-text-light); line-height: 1.8; }
 .hero__label {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
-  font-size: var(--fs-xs);
-  font-weight: var(--fw-semibold);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--color-secondary);
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.65);
   margin-bottom: var(--space-6);
   opacity: 0;
-  animation: fadeUp 0.8s 0.2s forwards;
+  animation: fadeUp 0.8s 0.1s forwards;
 }
 .hero__label::before, .hero__label::after {
   content: '';
   display: block;
-  width: 32px;
+  width: 28px;
   height: 1px;
-  background: var(--color-secondary);
+  background: rgba(212, 175, 55, 0.6);
 }
 .hero__title {
   font-family: var(--font-heading);
@@ -507,10 +508,61 @@ p { color: var(--color-text-light); line-height: 1.8; }
   animation: fadeUp 0.9s 0.8s forwards;
 }
 
+/* Hero stats bar */
+.hero__stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  background: rgba(15, 41, 64, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0;
+  animation: fadeIn 1s 1.0s forwards;
+}
+.hero__stat {
+  flex: 1;
+  max-width: 220px;
+  padding: var(--space-6) var(--space-8);
+  text-align: center;
+  position: relative;
+}
+.hero__stat + .hero__stat::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgba(255,255,255,0.18);
+}
+.hero__stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: var(--fw-bold);
+  color: var(--color-secondary);
+  line-height: 1;
+  margin-bottom: var(--space-1);
+}
+.hero__stat-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+}
+
 /* Scroll indicator */
 .scroll-indicator {
   position: absolute;
-  bottom: var(--space-8);
+  bottom: 120px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
