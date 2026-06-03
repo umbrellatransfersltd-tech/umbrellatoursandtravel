@@ -1462,6 +1462,37 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   50%       { transform: translateY(-22px) scale(1.07); }
 }
 
+/* Organic outline blob shapes */
+.nl-blob {
+  position: absolute;
+  animation: blobFloat 10s ease-in-out infinite;
+}
+.nl-blob--a {
+  width: 340px; height: 340px;
+  top: -60px; right: 5%;
+  animation-delay: 0s; animation-duration: 11s;
+}
+.nl-blob--b {
+  width: 260px; height: 260px;
+  bottom: -40px; left: 3%;
+  animation-delay: 1.5s; animation-duration: 9s;
+}
+.nl-blob--c {
+  width: 180px; height: 180px;
+  top: 40%; left: 5%;
+  animation-delay: 0.8s; animation-duration: 13s;
+}
+.nl-blob--d {
+  width: 220px; height: 220px;
+  bottom: 10%; right: 12%;
+  animation-delay: 2.5s; animation-duration: 8s;
+}
+@keyframes blobFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  33%       { transform: translateY(-16px) rotate(6deg) scale(1.04); }
+  66%       { transform: translateY(8px) rotate(-4deg) scale(0.97); }
+}
+
 .newsletter-inner {
   text-align: center;
   max-width: 560px;
