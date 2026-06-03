@@ -1951,6 +1951,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   .awards-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-layout { grid-template-columns: 1fr; }
   .cards-grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .cards-grid--3 { grid-template-columns: repeat(2, 1fr); }
   .story-layout { grid-template-columns: 1fr; }
   .story-image { max-width: 560px; margin-inline: auto; }
   .values-grid { grid-template-columns: 1fr; }
@@ -2018,4 +2019,44 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   .lightbox__nav--prev { left: 4px; top: auto; bottom: -56px; transform: none; }
   .lightbox__nav--next { right: 4px; top: auto; bottom: -56px; transform: none; }
   .lightbox__close { top: 8px; right: 8px; background: rgba(0,0,0,0.5); }
+
+  /* Hero adjustments */
+  .hero__content { text-align: center; }
+  .hero__label { text-align: center; }
+  .hero__stats { justify-content: center; gap: 1.5rem; }
+  .hero__actions { align-items: center; }
+
+  /* Cards full width */
+  .cards-grid--2,
+  .cards-grid--3 { grid-template-columns: 1fr; }
+
+  /* Section header tighter */
+  .section__header { margin-bottom: var(--space-12); }
+
+  /* CTA buttons stack */
+  .cta-section .btn { width: 100%; max-width: 280px; }
+
+  /* Feature blocks more compact */
+  .feature-block { padding: var(--space-6) var(--space-5); }
+
+  /* Newsletter inner */
+  .newsletter-inner { padding: var(--space-10) var(--space-4); }
+
+  /* Contact cards */
+  .contact-card { flex-direction: column; text-align: center; align-items: center; }
+
+  /* Footer */
+  .footer-links { columns: 1; }
+
+  /* Page hero smaller text */
+  .page-hero h1 { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+
+  /* World cards */
+  .world-card { max-width: 100%; }
+
+  /* Package cards */
+  .package-card__price .amount { font-size: var(--fs-2xl); }
+
+  /* Wider buttons */
+  .btn--lg { padding: 0.85em 1.5em; }
 }
