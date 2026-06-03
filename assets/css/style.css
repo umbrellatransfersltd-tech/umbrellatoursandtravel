@@ -267,8 +267,12 @@ p { color: var(--color-text-light); line-height: 1.8; }
   height: var(--header-h);
   display: flex;
   align-items: center;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 0.75rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
   background: transparent;
+}
+#site-header.scrolled {
+  padding-top: 0;
 }
 #site-header.scrolled {
   background: rgba(255,255,255,0.97);
@@ -297,13 +301,11 @@ p { color: var(--color-text-light); line-height: 1.8; }
   height: auto;
   display: block;
   max-width: none;
-  /* #192a41 dark navy in both states */
-  filter: brightness(0) saturate(100%) invert(13%) sepia(32%) saturate(900%) hue-rotate(185deg) brightness(88%) contrast(102%);
-  transition: filter 0.3s ease, width 0.3s ease;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
 }
 #site-header.scrolled .logo__img {
   filter: brightness(0) saturate(100%) invert(13%) sepia(32%) saturate(900%) hue-rotate(185deg) brightness(88%) contrast(102%);
-  width: 180px;
 }
 
 /* Footer logo */
