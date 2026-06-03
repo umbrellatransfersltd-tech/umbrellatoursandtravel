@@ -489,41 +489,125 @@
 <!-- NEWSLETTER -->
 <section class="newsletter-section" aria-labelledby="newsletter-heading">
   <div class="nl-deco" aria-hidden="true">
-    <!-- Large thin ring top-left -->
-    <svg class="nl-deco__ring nl-deco__ring--lg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/></svg>
-    <!-- Medium ring bottom-right -->
-    <svg class="nl-deco__ring nl-deco__ring--md" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="rgba(100,180,255,0.12)" stroke-width="1.5"/></svg>
-    <!-- Small solid ring centre-right -->
-    <svg class="nl-deco__ring nl-deco__ring--sm" viewBox="0 0 200 200"><circle cx="100" cy="100" r="70" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="3"/><circle cx="100" cy="100" r="50" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/></svg>
-    <!-- Half-circle left -->
-    <svg class="nl-deco__half nl-deco__half--l" viewBox="0 0 120 240"><path d="M120,0 A120,120 0 0,0 120,240" fill="none" stroke="rgba(100,180,255,0.14)" stroke-width="1.5"/></svg>
-    <!-- Half-circle right -->
-    <svg class="nl-deco__half nl-deco__half--r" viewBox="0 0 120 240"><path d="M0,0 A120,120 0 0,1 0,240" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/></svg>
-    <!-- Dots grid top-right -->
-    <svg class="nl-deco__dots nl-deco__dots--tr" viewBox="0 0 80 80">
-      <circle cx="10" cy="10" r="2" fill="rgba(255,255,255,0.15)"/><circle cx="30" cy="10" r="2" fill="rgba(255,255,255,0.10)"/><circle cx="50" cy="10" r="2" fill="rgba(255,255,255,0.07)"/><circle cx="70" cy="10" r="2" fill="rgba(255,255,255,0.05)"/>
-      <circle cx="10" cy="30" r="2" fill="rgba(255,255,255,0.10)"/><circle cx="30" cy="30" r="2" fill="rgba(100,180,255,0.20)"/><circle cx="50" cy="30" r="2" fill="rgba(255,255,255,0.08)"/><circle cx="70" cy="30" r="2" fill="rgba(255,255,255,0.05)"/>
-      <circle cx="10" cy="50" r="2" fill="rgba(255,255,255,0.07)"/><circle cx="30" cy="50" r="2" fill="rgba(255,255,255,0.05)"/><circle cx="50" cy="50" r="2" fill="rgba(100,180,255,0.15)"/><circle cx="70" cy="50" r="2" fill="rgba(255,255,255,0.05)"/>
-      <circle cx="10" cy="70" r="2" fill="rgba(255,255,255,0.05)"/><circle cx="30" cy="70" r="2" fill="rgba(255,255,255,0.04)"/><circle cx="50" cy="70" r="2" fill="rgba(255,255,255,0.04)"/><circle cx="70" cy="70" r="2" fill="rgba(255,255,255,0.03)"/>
+
+    <!-- London Eye (Ferris Wheel) — left side -->
+    <svg class="nl-london nl-london-eye" viewBox="0 0 220 240" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="rgba(255,255,255,0.13)" stroke-width="1.2" stroke-linecap="round">
+      <!-- Outer rim -->
+      <circle cx="110" cy="105" r="90" stroke="rgba(255,255,255,0.13)" stroke-width="1.5"/>
+      <!-- Inner hub -->
+      <circle cx="110" cy="105" r="12" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+      <!-- Spokes -->
+      <line x1="110" y1="93"  x2="110" y2="15"/>
+      <line x1="110" y1="117" x2="110" y2="195"/>
+      <line x1="98"  y1="105" x2="20"  y2="105"/>
+      <line x1="122" y1="105" x2="200" y2="105"/>
+      <line x1="101.5" y1="95.5" x2="46"  y2="41"/>
+      <line x1="118.5" y1="114.5" x2="174" y2="169"/>
+      <line x1="118.5" y1="95.5"  x2="174" y2="41"/>
+      <line x1="101.5" y1="114.5" x2="46"  y2="169"/>
+      <!-- Gondola capsules -->
+      <rect x="105" y="8"   width="10" height="6" rx="3"/>
+      <rect x="105" y="191" width="10" height="6" rx="3"/>
+      <rect x="13"  y="102" width="10" height="6" rx="3"/>
+      <rect x="197" y="102" width="10" height="6" rx="3"/>
+      <rect x="38"  y="33"  width="10" height="6" rx="3" transform="rotate(45 43 36)"/>
+      <rect x="163" y="158" width="10" height="6" rx="3" transform="rotate(45 168 161)"/>
+      <rect x="163" y="33"  width="10" height="6" rx="3" transform="rotate(-45 168 36)"/>
+      <rect x="38"  y="158" width="10" height="6" rx="3" transform="rotate(-45 43 161)"/>
+      <!-- Support legs -->
+      <line x1="80"  y1="195" x2="60"  y2="235" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+      <line x1="140" y1="195" x2="160" y2="235" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+      <!-- Ground line -->
+      <line x1="30" y1="235" x2="190" y2="235" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
     </svg>
-    <!-- Dots grid bottom-left -->
-    <svg class="nl-deco__dots nl-deco__dots--bl" viewBox="0 0 80 80">
-      <circle cx="10" cy="10" r="2" fill="rgba(100,180,255,0.18)"/><circle cx="30" cy="10" r="2" fill="rgba(255,255,255,0.10)"/><circle cx="50" cy="10" r="2" fill="rgba(255,255,255,0.07)"/>
-      <circle cx="10" cy="30" r="2" fill="rgba(255,255,255,0.12)"/><circle cx="30" cy="30" r="2" fill="rgba(100,180,255,0.14)"/><circle cx="50" cy="30" r="2" fill="rgba(255,255,255,0.06)"/>
-      <circle cx="10" cy="50" r="2" fill="rgba(255,255,255,0.08)"/><circle cx="30" cy="50" r="2" fill="rgba(255,255,255,0.05)"/><circle cx="50" cy="50" r="2" fill="rgba(100,180,255,0.10)"/>
+
+    <!-- Big Ben / Elizabeth Tower — right side -->
+    <svg class="nl-london nl-london-bigben" viewBox="0 0 120 320" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Spire tip -->
+      <line x1="60" y1="0" x2="50" y2="30" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+      <line x1="60" y1="0" x2="70" y2="30" stroke="rgba(255,255,255,0.16)" stroke-width="1"/>
+      <!-- Belfry / clock tower top -->
+      <rect x="42" y="30"  width="36" height="18" rx="1"/>
+      <rect x="38" y="48"  width="44" height="8"  rx="1"/>
+      <!-- Clock face floor -->
+      <rect x="34" y="56"  width="52" height="52" rx="2"/>
+      <!-- Clock circle -->
+      <circle cx="60" cy="82" r="20" stroke="rgba(255,255,255,0.18)" stroke-width="1.2"/>
+      <!-- Clock hands -->
+      <line x1="60" y1="82" x2="60" y2="66" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+      <line x1="60" y1="82" x2="74" y2="82" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+      <!-- Decorative band -->
+      <rect x="30" y="108" width="60" height="8"  rx="1"/>
+      <!-- Main shaft -->
+      <rect x="36" y="116" width="48" height="120" rx="1"/>
+      <!-- Arched windows (3 rows) -->
+      <path d="M46,128 Q46,118 54,118 Q62,118 62,128 L62,140 L46,140 Z"/>
+      <path d="M58,128 Q58,118 66,118 Q74,118 74,128 L74,140 L58,140 Z"/>
+      <path d="M46,152 Q46,142 54,142 Q62,142 62,152 L62,164 L46,164 Z"/>
+      <path d="M58,152 Q58,142 66,142 Q74,142 74,152 L74,164 L58,164 Z"/>
+      <path d="M46,176 Q46,166 54,166 Q62,166 62,176 L62,188 L46,188 Z"/>
+      <path d="M58,176 Q58,166 66,166 Q74,166 74,176 L74,188 L58,188 Z"/>
+      <!-- Base plinth -->
+      <rect x="28" y="236" width="64" height="16" rx="1"/>
+      <rect x="20" y="252" width="80" height="12" rx="1"/>
+      <!-- Ground -->
+      <line x1="10" y1="264" x2="110" y2="264" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
     </svg>
-    <!-- Diagonal lines accent -->
-    <svg class="nl-deco__lines" viewBox="0 0 160 160"><line x1="0" y1="160" x2="160" y2="0" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="20" y1="160" x2="160" y2="20" stroke="rgba(255,255,255,0.04)" stroke-width="1"/><line x1="40" y1="160" x2="160" y2="40" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></svg>
-    <!-- Small sparkle stars -->
-    <svg class="nl-deco__star nl-deco__star--1" viewBox="0 0 24 24"><path d="M12 2 L13.5 9 L20 12 L13.5 15 L12 22 L10.5 15 L4 12 L10.5 9 Z" fill="rgba(255,255,255,0.18)"/></svg>
-    <svg class="nl-deco__star nl-deco__star--2" viewBox="0 0 24 24"><path d="M12 2 L13.5 9 L20 12 L13.5 15 L12 22 L10.5 15 L4 12 L10.5 9 Z" fill="rgba(100,180,255,0.20)"/></svg>
-    <svg class="nl-deco__star nl-deco__star--3" viewBox="0 0 24 24"><path d="M12 2 L13.5 9 L20 12 L13.5 15 L12 22 L10.5 15 L4 12 L10.5 9 Z" fill="rgba(255,255,255,0.12)"/></svg>
-    <!-- Arc / crescent -->
-    <svg class="nl-deco__arc" viewBox="0 0 200 100"><path d="M10,90 Q100,-20 190,90" fill="none" stroke="rgba(100,180,255,0.12)" stroke-width="1.5"/><path d="M30,90 Q100,0 170,90" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/></svg>
-    <!-- Small cross / plus marks -->
-    <svg class="nl-deco__plus nl-deco__plus--1" viewBox="0 0 20 20"><line x1="10" y1="2" x2="10" y2="18" stroke="rgba(255,255,255,0.20)" stroke-width="1.5"/><line x1="2" y1="10" x2="18" y2="10" stroke="rgba(255,255,255,0.20)" stroke-width="1.5"/></svg>
-    <svg class="nl-deco__plus nl-deco__plus--2" viewBox="0 0 20 20"><line x1="10" y1="2" x2="10" y2="18" stroke="rgba(100,180,255,0.22)" stroke-width="1.5"/><line x1="2" y1="10" x2="18" y2="10" stroke="rgba(100,180,255,0.22)" stroke-width="1.5"/></svg>
-    <svg class="nl-deco__plus nl-deco__plus--3" viewBox="0 0 20 20"><line x1="10" y1="2" x2="10" y2="18" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/><line x1="2" y1="10" x2="18" y2="10" stroke="rgba(255,255,255,0.14)" stroke-width="1.5"/></svg>
+
+    <!-- Tower Bridge — bottom strip -->
+    <svg class="nl-london nl-london-bridge" viewBox="0 0 500 160" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="rgba(255,255,255,0.10)" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+      <!-- River / water line -->
+      <line x1="0" y1="145" x2="500" y2="145" stroke="rgba(100,180,255,0.12)" stroke-width="1"/>
+      <!-- Left approach road -->
+      <rect x="0"   y="120" width="100" height="25"/>
+      <!-- Right approach road -->
+      <rect x="400" y="120" width="100" height="25"/>
+      <!-- Left tower -->
+      <rect x="90"  y="50"  width="50" height="95" rx="1"/>
+      <!-- Left tower top / battlements -->
+      <rect x="85"  y="42"  width="60" height="12" rx="1"/>
+      <rect x="88"  y="30"  width="14" height="14" rx="1"/>
+      <rect x="108" y="30"  width="14" height="14" rx="1"/>
+      <rect x="128" y="30"  width="14" height="14" rx="1"/>
+      <!-- Left tower spires -->
+      <line x1="95"  y1="30" x2="95"  y2="10"/>
+      <line x1="115" y1="30" x2="115" y2="5"/>
+      <line x1="135" y1="30" x2="135" y2="10"/>
+      <!-- Right tower -->
+      <rect x="360" y="50"  width="50" height="95" rx="1"/>
+      <!-- Right tower top / battlements -->
+      <rect x="355" y="42"  width="60" height="12" rx="1"/>
+      <rect x="358" y="30"  width="14" height="14" rx="1"/>
+      <rect x="378" y="30"  width="14" height="14" rx="1"/>
+      <rect x="398" y="30"  width="14" height="14" rx="1"/>
+      <!-- Right tower spires -->
+      <line x1="365" y1="30" x2="365" y2="10"/>
+      <line x1="385" y1="30" x2="385" y2="5"/>
+      <line x1="405" y1="30" x2="405" y2="10"/>
+      <!-- Upper walkway between towers -->
+      <rect x="140" y="68" width="220" height="14" rx="2" stroke="rgba(255,255,255,0.12)"/>
+      <!-- Suspension cables left -->
+      <path d="M95,55 Q180,80 250,68" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <path d="M145,55 Q180,75 250,68" stroke="rgba(255,255,255,0.08)" stroke-width="0.8"/>
+      <!-- Suspension cables right -->
+      <path d="M405,55 Q320,80 250,68" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <path d="M355,55 Q320,75 250,68" stroke="rgba(255,255,255,0.08)" stroke-width="0.8"/>
+      <!-- Road deck between towers -->
+      <rect x="140" y="120" width="220" height="25"/>
+      <!-- Vertical hangers left span -->
+      <line x1="160" y1="82" x2="160" y2="120"/>
+      <line x1="180" y1="76" x2="180" y2="120"/>
+      <line x1="200" y1="72" x2="200" y2="120"/>
+      <line x1="220" y1="70" x2="220" y2="120"/>
+      <line x1="240" y1="68" x2="240" y2="120"/>
+      <!-- Vertical hangers right span -->
+      <line x1="260" y1="68" x2="260" y2="120"/>
+      <line x1="280" y1="70" x2="280" y2="120"/>
+      <line x1="300" y1="72" x2="300" y2="120"/>
+      <line x1="320" y1="76" x2="320" y2="120"/>
+      <line x1="340" y1="82" x2="340" y2="120"/>
+    </svg>
+
   </div>
   <div class="container">
     <div class="newsletter-inner reveal">
