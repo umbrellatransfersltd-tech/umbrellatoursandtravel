@@ -291,14 +291,16 @@ p { color: var(--color-text-light); line-height: 1.8; }
   flex-shrink: 0;
 }
 .logo__img {
-  height: 90px;
-  width: auto;
+  width: 220px;
+  height: auto;
   display: block;
+  max-width: none;
 }
 
-/* Footer logo is white — keep as-is on dark footer */
+/* Footer logo */
 .footer__logo .logo__img {
-  height: 90px;
+  width: 220px;
+  height: auto;
 }
 
 /* Main Nav */
