@@ -414,7 +414,9 @@ p { color: var(--color-text-light); line-height: 1.8; }
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
 }
 .hero__overlay {
   position: absolute;
