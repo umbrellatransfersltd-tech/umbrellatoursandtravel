@@ -1414,14 +1414,23 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 /* ─── Newsletter ────────────────────────────────────────────── */
 .newsletter-section {
   background: #192a41;
+  background-image: url('https://images.unsplash.com/photo-1543959190-4f42c5caa88f?w=1920&q=85&fit=crop');
+  background-size: cover;
+  background-position: center 40%;
   padding: var(--space-20) 0;
   position: relative;
   overflow: hidden;
 }
 
-/* No dot grid, no pseudo overlays */
-.newsletter-section::before,
+.newsletter-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(25,42,65,0.82) 0%, rgba(25,42,65,0.75) 50%, rgba(25,42,65,0.88) 100%);
+  z-index: 0;
+}
 .newsletter-section::after { display: none; }
+.newsletter-section .container { position: relative; z-index: 1; }
 
 .newsletter-shapes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 
