@@ -1340,7 +1340,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
   justify-content: center;
   flex-shrink: 0;
 }
-.contact-card__icon svg { width: 22px; height: 22px; color: #192a41; }
+.contact-card__icon svg { width: 22px; height: 22px; color: #ffffff; }
 .contact-card__label {
   font-size: var(--fs-xs);
   font-weight: var(--fw-semibold);
