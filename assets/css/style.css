@@ -1487,6 +1487,21 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   bottom: 10%; right: 12%;
   animation-delay: 2.5s; animation-duration: 8s;
 }
+.nl-blob--e {
+  width: 160px; height: 160px;
+  top: 15%; left: 22%;
+  animation-delay: 3.2s; animation-duration: 12s;
+}
+.nl-blob--f {
+  width: 290px; height: 290px;
+  bottom: -30px; right: 28%;
+  animation-delay: 0.5s; animation-duration: 14s;
+}
+.nl-blob--g {
+  width: 130px; height: 130px;
+  top: 55%; right: 22%;
+  animation-delay: 4s; animation-duration: 10s;
+}
 @keyframes blobFloat {
   0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
   33%       { transform: translateY(-16px) rotate(6deg) scale(1.04); }
