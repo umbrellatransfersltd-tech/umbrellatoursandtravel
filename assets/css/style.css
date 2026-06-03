@@ -1413,25 +1413,91 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 
 /* ─── Newsletter ────────────────────────────────────────────── */
 .newsletter-section {
-  background: var(--color-primary);
-  padding: var(--space-16) 0;
+  background: #192a41;
+  padding: var(--space-20) 0;
   position: relative;
   overflow: hidden;
 }
+
+/* Dot grid pattern */
 .newsletter-section::before {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -10%;
-  width: 40%;
-  height: 200%;
-  background: radial-gradient(ellipse, rgba(212,175,55,0.08) 0%, transparent 70%);
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  pointer-events: none;
 }
+
+/* Large decorative circles */
+.newsletter-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle 280px at 8% 50%, rgba(212,149,106,0.12) 0%, transparent 70%),
+    radial-gradient(circle 220px at 92% 20%, rgba(255,255,255,0.06) 0%, transparent 70%),
+    radial-gradient(circle 180px at 85% 80%, rgba(212,149,106,0.08) 0%, transparent 70%);
+}
+/* Floating decorative shapes */
+.newsletter-shapes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+
+.newsletter-shape {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.10);
+  animation: floatShape 8s ease-in-out infinite;
+}
+.newsletter-shape--1 {
+  width: 320px; height: 320px;
+  top: -80px; left: -80px;
+  background: rgba(212,149,106,0.07);
+  animation-delay: 0s;
+}
+.newsletter-shape--2 {
+  width: 200px; height: 200px;
+  bottom: -60px; right: 5%;
+  background: rgba(255,255,255,0.04);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation-delay: 2s;
+}
+.newsletter-shape--3 {
+  width: 120px; height: 120px;
+  top: 20%; right: 15%;
+  background: transparent;
+  border: 1.5px solid rgba(212,149,106,0.20);
+  animation-delay: 1s;
+  animation-duration: 6s;
+}
+.newsletter-shape--4 {
+  width: 60px; height: 60px;
+  bottom: 25%; left: 12%;
+  background: rgba(255,255,255,0.06);
+  border-radius: 12px;
+  transform: rotate(30deg);
+  animation-delay: 3s;
+  animation-duration: 10s;
+}
+
+@keyframes floatShape {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%       { transform: translateY(-18px) rotate(8deg); }
+}
+.newsletter-shape--4 {
+  animation-name: floatShapeBox;
+}
+@keyframes floatShapeBox {
+  0%, 100% { transform: rotate(30deg) translateY(0); }
+  50%       { transform: rotate(45deg) translateY(-12px); }
+}
+
 .newsletter-inner {
   text-align: center;
   max-width: 560px;
   margin-inline: auto;
   position: relative;
+  z-index: 1;
 }
 .newsletter-inner .label { margin-bottom: var(--space-3); }
 .newsletter-inner h2 { color: #fff; margin-bottom: var(--space-3); }
