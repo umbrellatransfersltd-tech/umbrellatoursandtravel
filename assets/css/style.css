@@ -650,7 +650,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
   top: var(--space-3);
   left: var(--space-3);
   background: #192a41;
-  color: var(--color-primary);
+  color: #ffffff;
   font-size: var(--fs-xs);
   font-weight: var(--fw-bold);
   letter-spacing: 0.06em;
