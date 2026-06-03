@@ -189,12 +189,12 @@ p { color: var(--color-text-light); line-height: 1.8; }
 .btn {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: 0.85em 2em;
-  font-family: var(--font-body);
-  font-size: var(--fs-sm);
-  font-weight: var(--fw-semibold);
-  letter-spacing: 0.06em;
+  gap: 0.5rem;
+  padding: 0.75em 1.75em;
+  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   border-radius: var(--radius-full);
   transition: all var(--transition);
   position: relative;
@@ -254,8 +254,8 @@ p { color: var(--color-text-light); line-height: 1.8; }
   box-shadow: var(--shadow-md);
 }
 
-.btn--sm { padding: 0.6em 1.4em; font-size: var(--fs-xs); }
-.btn--lg { padding: 1em 2.4em; font-size: var(--fs-md); }
+.btn--sm { padding: 0.55em 1.3em; font-size: 0.8rem; }
+.btn--lg { padding: 0.85em 2em; font-size: 0.95rem; }
 
 /* ─── Header / Navigation ───────────────────────────────────── */
 :root { --header-h: 64px; }
@@ -344,13 +344,12 @@ p { color: var(--color-text-light); line-height: 1.8; }
 .header__cta {
   margin-left: 0.5rem;
   font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   background: #fff;
   color: #1b2d45;
-  padding: 0.55em 1.3em;
+  padding: 0.75em 1.75em;
   border-radius: var(--radius-full);
   transition: background 0.2s ease, color 0.2s ease;
   white-space: nowrap;
@@ -508,13 +507,6 @@ p { color: var(--color-text-light); line-height: 1.8; }
   flex-wrap: wrap;
   margin-bottom: 4rem;
   align-items: center;
-}
-.hero__actions .btn {
-  font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
-  font-size: 0.95rem;
-  font-weight: 500;
-  letter-spacing: 0;
-  padding: 0.75em 1.5em;
 }
 
 /* Terracotta filled button */
