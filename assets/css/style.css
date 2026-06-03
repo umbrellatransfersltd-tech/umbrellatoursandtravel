@@ -14,8 +14,8 @@
 /* ─── CSS Custom Properties ─────────────────────────────────── */
 :root {
   --color-primary:    #192a41;
-  --color-secondary:  #FF6B6B;
-  --color-accent:     #FF6B6B;
+  --color-secondary:  #d4956a;
+  --color-accent:     #d4956a;
   --color-bg:         #ffffff;
   --color-text:       #192a41;
   --color-text-light: #4a5568;
@@ -105,7 +105,7 @@ input, textarea, select {
   background: none;
 }
 table { border-collapse: collapse; width: 100%; }
-::selection { background: #FF6B6B; color: #192a41; }
+::selection { background: #d4956a; color: #192a41; }
 :focus-visible { outline: 2px solid var(--color-secondary); outline-offset: 3px; }
 
 /* ─── Typography Scale ──────────────────────────────────────── */
@@ -141,7 +141,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
   padding-inline: var(--container-pad);
 }
 .text-center { text-align: center; }
-.text-gold   { color: #FF6B6B; }
+.text-gold   { color: #d4956a; }
 .text-navy   { color: #192a41; }
 .text-white  { color: #fff; }
 .mt-4  { margin-top: var(--space-4); }
@@ -212,7 +212,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
 .btn:hover::before { transform: translateX(100%); }
 
 .btn--gold {
-  background: #FF6B6B;
+  background: #d4956a;
   color: #fff;
   box-shadow: 0 4px 16px rgba(212,149,106,0.30);
 }
@@ -511,7 +511,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
 
 /* Terracotta filled button */
 .btn--terracotta {
-  background: #FF6B6B;
+  background: #d4956a;
   color: #fff;
   border: none;
 }
@@ -1022,7 +1022,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
 .testimonial-card--featured .testimonial-quote { color: rgba(255,255,255,0.92); font-size: clamp(var(--fs-base), 1.8vw, var(--fs-lg)); }
 .testimonial-card--featured .testimonial-author__name { color: #fff; }
 .testimonial-card--featured .testimonial-author__location { color: rgba(255,255,255,0.55); }
-.testimonial-card--featured .testimonial-stars svg { fill: #FF6B6B; }
+.testimonial-card--featured .testimonial-stars svg { fill: #d4956a; }
 .testimonial-card--featured .testimonial-author__avatar { background: rgba(255,255,255,0.15); }
 
 .testimonial-quote-mark {
@@ -1417,7 +1417,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   background-image: url('https://images.unsplash.com/photo-1543959190-4f42c5caa88f?w=1920&q=85&fit=crop');
   background-size: cover;
   background-position: center 40%;
-  padding: var(--space-20) 0 0;
+  padding: var(--space-20) 0;
   position: relative;
   overflow: hidden;
 }
@@ -1708,7 +1708,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   border: 2px solid var(--color-secondary);
 }
 #back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
-#back-to-top:hover { background: #FF6B6B; color: var(--color-primary); transform: translateY(-3px); }
+#back-to-top:hover { background: #d4956a; color: var(--color-primary); transform: translateY(-3px); }
 #back-to-top svg { width: 20px; height: 20px; }
 
 /* WhatsApp Floating Button */
