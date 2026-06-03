@@ -299,21 +299,13 @@ p { color: var(--color-text-light); line-height: 1.8; }
   flex-shrink: 0;
 }
 .logo__img {
-  height: 52px;
+  height: 48px;
   width: auto;
   display: block;
-  /* invert black logo to white on dark header */
-  filter: brightness(0) invert(1);
-  transition: filter var(--transition);
-}
-/* When header scrolls to solid light bg, revert to original black logo */
-.header--scrolled .logo__img {
-  filter: brightness(0) invert(1);
 }
 
-/* Footer logo — white version */
+/* Footer logo — white SVG, slightly taller */
 .footer__logo .logo__img {
-  filter: none;
   height: 56px;
 }
 
