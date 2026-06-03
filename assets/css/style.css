@@ -2,8 +2,8 @@
    Umbrella Tours & Travel — Main Stylesheet
    Color Palette:
      Primary:    #1b2d45 (dark navy)
-     Secondary:  #d4956a (terracotta)
-     Accent:     #d4956a (light blue)
+     Secondary:  #1b2d45 (terracotta)
+     Accent:     #1b2d45 (light blue)
      Background: #ffffff
      Text:       #222222
    ============================================================ */
@@ -14,8 +14,8 @@
 /* ─── CSS Custom Properties ─────────────────────────────────── */
 :root {
   --color-primary:    #1b2d45;
-  --color-secondary:  #d4956a;
-  --color-accent:     #d4956a;
+  --color-secondary:  #1b2d45;
+  --color-accent:     #1b2d45;
   --color-bg:         #ffffff;
   --color-text:       #1a1a1a;
   --color-text-light: #444444;
@@ -71,7 +71,7 @@
   --shadow-md:  0 4px 16px rgba(0,0,0,0.07), 0 2px 6px rgba(0,0,0,0.04);
   --shadow-lg:  0 10px 40px rgba(0,0,0,0.09), 0 4px 16px rgba(0,0,0,0.05);
   --shadow-xl:  0 20px 60px rgba(0,0,0,0.18), 0 8px 24px rgba(0,0,0,0.10);
-  --shadow-accent:0 4px 20px rgba(212, 149, 106, 0.25);
+  --shadow-accent:0 4px 20px rgba(27, 45, 69, 0.15);
 
   --transition: 0.3s ease;
   --transition-slow: 0.5s ease;
@@ -443,7 +443,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
   display: block;
   width: 28px;
   height: 1px;
-  background: rgba(27, 45, 69, 0.3);
+  background: rgba(27, 45, 69, 0.25);
 }
 .hero__title {
   font-family: var(--font-heading);
