@@ -304,8 +304,14 @@ p { color: var(--color-text-light); line-height: 1.8; }
   display: block;
 }
 
-/* Footer logo — white SVG, slightly taller */
+/* Header logo is black — invert to white on dark nav */
+.logo:not(.footer__logo) .logo__img {
+  filter: brightness(0) invert(1);
+}
+
+/* Footer logo is already white — display as-is */
 .footer__logo .logo__img {
+  filter: none;
   height: 56px;
 }
 
