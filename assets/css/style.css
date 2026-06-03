@@ -327,15 +327,18 @@ p { color: var(--color-text-light); line-height: 1.8; }
   transition: color 0.2s ease, background 0.2s ease;
   white-space: nowrap;
 }
-.nav__link:hover { color: #fff; }
+.nav__link:hover { color: #fff; background: rgba(255,255,255,0.12); }
 .nav__link.active { color: #fff; }
 
 /* When scrolled — dark text */
 #site-header.scrolled .nav__link {
-  color: rgba(27,45,69,0.70);
+  color: rgba(27,45,69,0.65);
 }
 #site-header.scrolled .nav__link:hover,
-#site-header.scrolled .nav__link.active { color: #1b2d45; }
+#site-header.scrolled .nav__link.active {
+  color: #192a41;
+  background: rgba(25,42,65,0.08);
+}
 
 /* Header CTA button */
 .header__cta {
@@ -476,11 +479,10 @@ p { color: var(--color-text-light); line-height: 1.8; }
   display: block;
   font-family: 'DM Mono', monospace;
   font-size: 0.7rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #d4956a;
+  color: rgba(255,255,255,0.90);
   margin-bottom: 1.5rem;
-  opacity: 1;
 }
 .hero__title {
   font-family: 'DM Serif Display', 'Playfair Display', Georgia, serif;
