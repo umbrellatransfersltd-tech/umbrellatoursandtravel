@@ -76,7 +76,7 @@
   --transition: 0.3s ease;
   --transition-slow: 0.5s ease;
 
-  --header-h: 120px;
+  --header-h: 90px;
   --container-max: 1280px;
   --container-pad: clamp(1rem, 5vw, 2.5rem);
 }
@@ -291,7 +291,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
   flex-shrink: 0;
 }
 .logo__img {
-  width: 360px;
+  width: 200px;
   height: auto;
   display: block;
   max-width: none;
@@ -299,7 +299,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
 
 /* Footer logo */
 .footer__logo .logo__img {
-  width: 360px;
+  width: 200px;
   height: auto;
 }
 
