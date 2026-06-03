@@ -1419,77 +1419,47 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   overflow: hidden;
 }
 
-/* Dot grid pattern */
-.newsletter-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1.5px, transparent 1.5px);
-  background-size: 28px 28px;
-  pointer-events: none;
-}
+/* No dot grid, no pseudo overlays */
+.newsletter-section::before,
+.newsletter-section::after { display: none; }
 
-/* Large decorative circles */
-.newsletter-section::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle 280px at 8% 50%, rgba(212,149,106,0.12) 0%, transparent 70%),
-    radial-gradient(circle 220px at 92% 20%, rgba(255,255,255,0.06) 0%, transparent 70%),
-    radial-gradient(circle 180px at 85% 80%, rgba(212,149,106,0.08) 0%, transparent 70%);
-}
-/* Floating decorative shapes */
+/* Floating blurred purple circles */
 .newsletter-shapes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 
 .newsletter-shape {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.10);
-  animation: floatShape 8s ease-in-out infinite;
+  animation: floatShape 9s ease-in-out infinite;
+  filter: blur(70px);
 }
 .newsletter-shape--1 {
-  width: 320px; height: 320px;
-  top: -80px; left: -80px;
-  background: rgba(212,149,106,0.07);
-  animation-delay: 0s;
+  width: 420px; height: 420px;
+  top: -140px; left: -100px;
+  background: rgba(139, 92, 246, 0.40);
+  animation-delay: 0s; animation-duration: 10s;
 }
 .newsletter-shape--2 {
-  width: 200px; height: 200px;
-  bottom: -60px; right: 5%;
-  background: rgba(255,255,255,0.04);
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  animation-delay: 2s;
+  width: 320px; height: 320px;
+  bottom: -100px; right: -80px;
+  background: rgba(167, 139, 250, 0.30);
+  animation-delay: 2s; animation-duration: 12s;
 }
 .newsletter-shape--3 {
-  width: 120px; height: 120px;
-  top: 20%; right: 15%;
-  background: transparent;
-  border: 1.5px solid rgba(212,149,106,0.20);
-  animation-delay: 1s;
-  animation-duration: 6s;
+  width: 240px; height: 240px;
+  top: 20%; right: 8%;
+  background: rgba(109, 40, 217, 0.28);
+  animation-delay: 1s; animation-duration: 8s;
 }
 .newsletter-shape--4 {
-  width: 60px; height: 60px;
-  bottom: 25%; left: 12%;
-  background: rgba(255,255,255,0.06);
-  border-radius: 12px;
-  transform: rotate(30deg);
-  animation-delay: 3s;
-  animation-duration: 10s;
+  width: 200px; height: 200px;
+  bottom: 5%; left: 18%;
+  background: rgba(196, 181, 253, 0.22);
+  animation-delay: 3s; animation-duration: 11s;
 }
 
 @keyframes floatShape {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50%       { transform: translateY(-18px) rotate(8deg); }
-}
-.newsletter-shape--4 {
-  animation-name: floatShapeBox;
-}
-@keyframes floatShapeBox {
-  0%, 100% { transform: rotate(30deg) translateY(0); }
-  50%       { transform: rotate(45deg) translateY(-12px); }
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%       { transform: translateY(-22px) scale(1.07); }
 }
 
 .newsletter-inner {
