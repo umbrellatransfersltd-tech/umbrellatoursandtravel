@@ -293,17 +293,18 @@ p { color: var(--color-text-light); line-height: 1.8; }
   flex-shrink: 0;
 }
 .logo__img {
-  width: 160px;
+  width: 190px;
   height: auto;
   display: block;
   max-width: none;
-  /* White logo on transparent header */
-  filter: brightness(0) invert(1);
-  transition: filter 0.3s ease;
+  /* Sky blue tinted logo on transparent header */
+  filter: brightness(0) invert(63%) sepia(40%) saturate(600%) hue-rotate(165deg) brightness(105%);
+  transition: filter 0.3s ease, width 0.3s ease;
 }
 #site-header.scrolled .logo__img {
-  /* Dark logo on white background */
+  /* Original dark navy logo on white background */
   filter: none;
+  width: 180px;
 }
 
 /* Footer logo */
