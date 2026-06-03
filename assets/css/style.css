@@ -1423,39 +1423,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 .newsletter-section::before,
 .newsletter-section::after { display: none; }
 
-/* Floating blurred blue glow circles */
 .newsletter-shapes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-
-.newsletter-shape {
-  position: absolute;
-  border-radius: 50%;
-  animation: floatShape 9s ease-in-out infinite;
-  filter: blur(80px);
-}
-.newsletter-shape--1 {
-  width: 440px; height: 440px;
-  top: -160px; left: -120px;
-  background: rgba(30, 80, 160, 0.45);
-  animation-delay: 0s; animation-duration: 10s;
-}
-.newsletter-shape--2 {
-  width: 340px; height: 340px;
-  bottom: -110px; right: -90px;
-  background: rgba(56, 132, 220, 0.30);
-  animation-delay: 2s; animation-duration: 12s;
-}
-.newsletter-shape--3 {
-  width: 260px; height: 260px;
-  top: 20%; right: 8%;
-  background: rgba(20, 60, 120, 0.35);
-  animation-delay: 1s; animation-duration: 8s;
-}
-.newsletter-shape--4 {
-  width: 210px; height: 210px;
-  bottom: 5%; left: 18%;
-  background: rgba(100, 180, 255, 0.18);
-  animation-delay: 3s; animation-duration: 11s;
-}
 
 @keyframes floatShape {
   0%, 100% { transform: translateY(0) scale(1); }
