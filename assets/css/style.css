@@ -76,7 +76,7 @@
   --transition: 0.3s ease;
   --transition-slow: 0.5s ease;
 
-  --header-h: 80px;
+  --header-h: 100px;
   --container-max: 1280px;
   --container-pad: clamp(1rem, 5vw, 2.5rem);
 }
@@ -291,14 +291,14 @@ p { color: var(--color-text-light); line-height: 1.8; }
   flex-shrink: 0;
 }
 .logo__img {
-  height: 44px;
+  height: 70px;
   width: auto;
   display: block;
 }
 
 /* Footer logo is white — keep as-is on dark footer */
 .footer__logo .logo__img {
-  height: 52px;
+  height: 80px;
 }
 
 /* Main Nav */
