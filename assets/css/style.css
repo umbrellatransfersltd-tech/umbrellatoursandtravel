@@ -553,7 +553,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
   line-height: 1;
 }
 .hero__stat-star {
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   vertical-align: middle;
   position: relative;
   top: -3px;
