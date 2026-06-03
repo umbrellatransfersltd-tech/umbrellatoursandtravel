@@ -545,7 +545,8 @@ p { color: var(--color-text-light); line-height: 1.8; }
   flex-direction: column;
 }
 .hero__stat-number {
-  display: block;
+  display: flex;
+  align-items: center;
   font-family: 'DM Serif Display', 'Playfair Display', Georgia, serif;
   font-size: 2rem;
   font-weight: var(--fw-bold);
@@ -553,12 +554,10 @@ p { color: var(--color-text-light); line-height: 1.8; }
   line-height: 1;
 }
 .hero__stat-star {
-  font-size: 1.1rem;
-  vertical-align: middle;
-  position: relative;
-  top: -3px;
-  margin-left: 2px;
+  font-size: 1.3rem;
+  margin-left: 3px;
   color: #fff;
+  line-height: 1;
 }
 .hero__stat-label {
   display: block;
