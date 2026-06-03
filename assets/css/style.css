@@ -310,7 +310,7 @@ p { color: var(--color-text-light); line-height: 1.8; }
 
 /* Footer logo */
 .footer__logo .logo__img {
-  width: 180px;
+  width: 220px;
   height: auto;
   filter: none;
 }
