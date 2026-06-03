@@ -1641,7 +1641,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   bottom: 0; left: 0;
   width: 32px;
   height: 2px;
-  background: #192a41;
+  background: #d4956a;
   border-radius: var(--radius-full);
 }
 .footer-links { display: flex; flex-direction: column; gap: var(--space-3); }
@@ -1656,7 +1656,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 .footer-links a:hover { color: #192a41; }
 .footer-links a::before {
   content: '›';
-  color: #192a41;
+  color: rgba(255,255,255,0.35);
   font-size: var(--fs-md);
   line-height: 1;
 }
@@ -1668,7 +1668,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   margin-bottom: var(--space-4);
   align-items: flex-start;
 }
-.footer-contact-item svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 3px; color: #192a41; }
+.footer-contact-item svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 3px; color: rgba(255,255,255,0.45); }
 .footer-contact-item a { color: rgba(255,255,255,0.55); transition: color var(--transition); }
 .footer-contact-item a:hover { color: #192a41; }
 .footer-bottom {
