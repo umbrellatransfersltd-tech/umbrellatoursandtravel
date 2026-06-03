@@ -553,11 +553,11 @@ p { color: var(--color-text-light); line-height: 1.8; }
   line-height: 1;
 }
 .hero__stat-star {
-  font-size: 1rem;
+  font-size: 0.65rem;
   vertical-align: middle;
   position: relative;
-  top: -3px;
-  margin-left: 1px;
+  top: -4px;
+  margin-left: 2px;
   color: #d4956a;
 }
 .hero__stat-label {
